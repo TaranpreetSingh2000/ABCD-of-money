@@ -1,8 +1,15 @@
 // ./src/admin/app.ts
-// import "../extensions/custom.css";
+import AuthLogo from "../extensions/my-auth-logo.png";
+import MenuLogo from "../extensions/my-menu-logo.png";
 
 export default {
   config: {
+    auth: {
+      logo: AuthLogo,
+    },
+    menu: {
+      logo: MenuLogo,
+    },
     theme: {
       light: {
         colors: {
