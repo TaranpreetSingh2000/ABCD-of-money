@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Mutual_Funds" data-name="Mutual Funds" transform="translate(8818 -359)">
+    <rect id="Rectangle_151088" data-name="Rectangle 151088" width="24" height="24" transform="translate(-8818 359)" fill="none"/>
+    <g id="Group_174584" data-name="Group 174584" transform="translate(7033.875 -8915.844)">
+      <path id="Path_17706" data-name="Path 17706" d="M19.165,15h0l-2.446,2.436-2.362-2.362a.794.794,0,0,0-1.123,0l-2.69,2.69a.794.794,0,1,0,1.123,1.123l2.118-2.118,2.362,2.372a.837.837,0,0,0,.561.233.794.794,0,0,0,.561-.233l3.018-3.008h0l1.281,1.281V13.71h-3.7Z" transform="translate(-15855.359 9270.936)" fill="#ca1f34"/>
+      <path id="Path_17707" data-name="Path 17707" d="M18.523,6.07H10.51a4.457,4.457,0,0,0-4.44,4.44v8.013a4.457,4.457,0,0,0,4.44,4.44h8.013a4.457,4.457,0,0,0,4.44-4.44V10.51a4.457,4.457,0,0,0-4.44-4.44Zm3.164,12.453a3.173,3.173,0,0,1-3.164,3.164H10.51a3.173,3.173,0,0,1-3.164-3.164V10.51A3.173,3.173,0,0,1,10.51,7.346h8.013a3.173,3.173,0,0,1,3.164,3.164Z" transform="translate(-15853.946 9272.773)" fill="#414042" stroke="#414042" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>

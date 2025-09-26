@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Personal_Loan" data-name="Personal Loan" transform="translate(8818 -410)">
+    <rect id="Rectangle_151088" data-name="Rectangle 151088" width="24" height="24" transform="translate(-8818 410)" fill="none"/>
+    <g id="user_1_" data-name="user (1)" transform="translate(-8817 409.955)">
+      <path id="Path_17684" data-name="Path 17684" d="M17.553,20.082V18.388A3.388,3.388,0,0,0,14.164,15H7.388A3.388,3.388,0,0,0,4,18.388v1.694" transform="translate(0 -1.836)" fill="none" stroke="#414042" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Ellipse_439" data-name="Ellipse 439" cx="3.399" cy="3.399" r="3.399" transform="translate(7.399 3)" fill="none" stroke="#414042" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <g id="Group_172756" data-name="Group 172756" transform="translate(9.991 11.175)">
+        <g id="Ellipse_443" data-name="Ellipse 443" transform="translate(0 0)" fill="#fff" stroke="#ca1f34" stroke-width="1.5">
+          <ellipse cx="4.847" cy="4.958" rx="4.847" ry="4.958" stroke="none"/>
+          <ellipse cx="4.847" cy="4.958" rx="4.097" ry="4.208" fill="none"/>
+        </g>
+        <g id="Group_172896" data-name="Group 172896" transform="translate(3.484 2.933)">
+          <path id="Path_16534" data-name="Path 16534" d="M35.4,42.244a.331.331,0,0,1,.331-.331h.7a.331.331,0,0,1,0,.662h-.7A.331.331,0,0,1,35.4,42.244Z" transform="translate(-35.403 -39.823)" fill="#ca1f34" fill-rule="evenodd"/>
+          <path id="Path_16535" data-name="Path 16535" d="M35.4,33.823a.331.331,0,0,1,.331-.331h2.613a.331.331,0,0,1,0,.662H35.734A.331.331,0,0,1,35.4,33.823Z" transform="translate(-35.403 -33.492)" fill="#ca1f34" fill-rule="evenodd"/>
+          <path id="Path_16536" data-name="Path 16536" d="M35.4,38.034a.331.331,0,0,1,.331-.331h2.613a.331.331,0,0,1,0,.662H35.734A.331.331,0,0,1,35.4,38.034Z" transform="translate(-35.403 -36.658)" fill="#ca1f34" fill-rule="evenodd"/>
+          <path id="Path_16537" data-name="Path 16537" d="M35.5,42.011a.331.331,0,0,1,.468,0l1.848,1.848a.331.331,0,0,1-.468.468L35.5,42.479A.331.331,0,0,1,35.5,42.011Z" transform="translate(-35.403 -39.823)" fill="#ca1f34" fill-rule="evenodd"/>
+          <path id="Path_16538" data-name="Path 16538" d="M39.994,34.868a.761.761,0,0,0-.8-.714v-.662a1.379,1.379,0,1,1,0,2.752v-.662A.761.761,0,0,0,39.994,34.868Z" transform="translate(-38.252 -33.492)" fill="#ca1f34" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,197 @@
+{
+  "tabs": ["recent", "popular"],
+  "content": {
+    "recent": [
+      {
+        "category": "Finance",
+        "items": [
+          {
+            "title": "The Importance of Financial Planning",
+            "readTime": "05 Min Read",
+            "date": "20 July 2023",
+            "link": "/finance/financial-planning"
+          },
+          {
+            "title": "How to Manage Risk",
+            "readTime": "07 Min Read",
+            "date": "18 July 2023",
+            "link": "/finance/risk-management"
+          },
+          {
+            "title": "Smart Saving Tips",
+            "readTime": "04 Min Read",
+            "date": "15 July 2023",
+            "link": "/finance/saving-tips"
+          }
+        ]
+      },
+      {
+        "category": "ABC",
+        "items": [
+          {
+            "title": "Trends in ABC Industry",
+            "readTime": "06 Min Read",
+            "date": "12 July 2023",
+            "link": "/abc/trends"
+          },
+          {
+            "title": "How ABC Impacts Modern Business",
+            "readTime": "05 Min Read",
+            "date": "10 July 2023",
+            "link": "/abc/business-impact"
+          },
+          {
+            "title": "How ABC Impacts Modern Business",
+            "readTime": "05 Min Read",
+            "date": "10 July 2023",
+            "link": "/abc/business-impact"
+          },
+          {
+            "title": "How ABC Impacts Modern Business",
+            "readTime": "05 Min Read",
+            "date": "10 July 2023",
+            "link": "/abc/business-impact"
+          },
+           {
+            "title": "Trends in ABC Industry",
+            "readTime": "06 Min Read",
+            "date": "12 July 2023",
+            "link": "/abc/trends"
+          }
+        ]
+      }
+    ],
+    "popular": [
+      {
+        "category": "Finance",
+        "items": [
+          {
+            "title": "Investment Basics Basics Investment",
+            "readTime": "04 Min Read",
+            "date": "10 July 2023",
+            "link": "/finance/investment-basics"
+          },
+          {
+            "title": "Top 5 Budgeting Apps",
+            "readTime": "03 Min Read",
+            "date": "08 July 2023",
+            "link": "/finance/budgeting-apps"
+          },
+          {
+            "title": "Investment Basics Basics Investment",
+            "readTime": "04 Min Read",
+            "date": "10 July 2023",
+            "link": "/finance/investment-basics"
+          },
+          {
+            "title": "Top 5 Budgeting Apps",
+            "readTime": "03 Min Read",
+            "date": "08 July 2023",
+            "link": "/finance/budgeting-apps"
+          },
+          {
+            "title": "Investment Basics Basics Investment",
+            "readTime": "04 Min Read",
+            "date": "10 July 2023",
+            "link": "/finance/investment-basics"
+          },
+          {
+            "title": "Top 5 Budgeting Apps",
+            "readTime": "03 Min Read",
+            "date": "08 July 2023",
+            "link": "/finance/budgeting-apps"
+          },
+          {
+            "title": "Investment Basics Basics Investment",
+            "readTime": "04 Min Read",
+            "date": "10 July 2023",
+            "link": "/finance/investment-basics"
+          },
+          {
+            "title": "Top 5 Budgeting Apps",
+            "readTime": "03 Min Read",
+            "date": "08 July 2023",
+            "link": "/finance/budgeting-apps"
+          },
+          {
+            "title": "Investment Basics Basics Investment",
+            "readTime": "04 Min Read",
+            "date": "10 July 2023",
+            "link": "/finance/investment-basics"
+          },
+          {
+            "title": "Top 5 Budgeting Apps",
+            "readTime": "03 Min Read",
+            "date": "08 July 2023",
+            "link": "/finance/budgeting-apps"
+          },
+          {
+            "title": "Investment Basics Basics Investment",
+            "readTime": "04 Min Read",
+            "date": "10 July 2023",
+            "link": "/finance/investment-basics"
+          },
+          {
+            "title": "Top 5 Budgeting Apps",
+            "readTime": "03 Min Read",
+            "date": "08 July 2023",
+            "link": "/finance/budgeting-apps"
+          },
+          {
+            "title": "Investment Basics Basics Investment",
+            "readTime": "04 Min Read",
+            "date": "10 July 2023",
+            "link": "/finance/investment-basics"
+          },
+          {
+            "title": "Top 5 Budgeting Apps",
+            "readTime": "03 Min Read",
+            "date": "08 July 2023",
+            "link": "/finance/budgeting-apps"
+          },
+          {
+            "title": "Investment Basics Basics Investment",
+            "readTime": "04 Min Read",
+            "date": "10 July 2023",
+            "link": "/finance/investment-basics"
+          },
+          {
+            "title": "Top 5 Budgeting Apps",
+            "readTime": "03 Min Read",
+            "date": "08 July 2023",
+            "link": "/finance/budgeting-apps"
+          },
+          {
+            "title": "Investment Basics Basics Investment",
+            "readTime": "04 Min Read",
+            "date": "10 July 2023",
+            "link": "/finance/investment-basics"
+          },
+          {
+            "title": "Top 5 Budgeting Apps",
+            "readTime": "03 Min Read",
+            "date": "08 July 2023",
+            "link": "/finance/budgeting-apps"
+          }
+        ]
+      },
+      {
+        "category": "Technology",
+        "items": [
+          {
+            "title": "AI in Everyday Life",
+            "readTime": "06 Min Read",
+            "date": "05 July 2023",
+            "link": "/tech/ai-in-life"
+          },
+          {
+            "title": "Future of Web Development Web Development",
+            "readTime": "07 Min Read",
+            "date": "01 July 2023",
+            "link": "/tech/web-future"
+          }
+        ]
+      }
+    ]
+  }
+}

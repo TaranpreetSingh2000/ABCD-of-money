@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.right_sticky_options_wrapper {
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 111;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.right_option_list {
+    background: #fff;
+    border-top-left-radius: 10px;
+    width: 88px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -10px 3px 15px #0000000D;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
+    ul.right_option_list {
+        width: 60px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .right_option_list {
+        width: 80px;
+    }
+}
+
+.right_option_list li:first-child {
+    border-top-left-radius: 10px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
+    .right_option_list li {
+        height: auto;
+        padding: 8px;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .right_option_list li {
+        height: 80px;
+    }
+}
+.right_option_list li {
+    height: 105px;
+    padding: 0 10px;
+    display: flex
+;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    transition: .5s;
+}
+li {
+    list-style: none;
+}
+
+.rightNavAbcd-logo .downloadLink {
+    padding-top: 40px;
+    position: relative;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
+    .right_option_list li a {
+        font-size: 10px;
+        line-height: 1;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .right_option_list li a {
+        font-size: 9px;
+    }
+}
+.right_option_list li a {
+    font: normal normal 12px / 14px var(--dev_bold);
+    color: rgba(17, 17, 17, .7);
+    display: flex
+;
+    flex-direction: column;
+    text-align: center;
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+}
+.nav_sub_back a, .right_option_list li a {
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+a, a:active, a:focus, a:hover {
+    outline: 0;
+    color: initial;
+    text-decoration: none;
+}
+
+.rightNavAbcd-logo .downloadLink img {
+    position: absolute;
+    top: 0;
+}
+
+.right_option_list li>a img {
+    max-width: 25px;
+    display: block;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+

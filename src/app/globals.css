@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #c91429;
+  --secondary: rgb(17, 17, 17);
+  --breakpoint-large: 1440px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Bottom nav dropdown arrow */
+.BottomNav button,
+.primaryNav button {
+  position: relative;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* .BottomNav button:hover,
+.primaryNav button:hover {
+  color: #c91429;
+} */
+
+.BottomNav button::before,
+.BottomNav button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 2px;
+  height: 8px;
+  background-color: black;
+  border-radius: 9999px;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-50%);
+}
+
+.primaryNav button::before,
+.primaryNav button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 2px;
+  height: 8px;
+  background-color: white;
+  border-radius: 9999px;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-50%);
+}
+
+.BottomNav button::before {
+  right: -16px;
+  transform: translateY(-50%) rotate(40deg);
+}
+
+.primaryNav button::before {
+  right: 16px;
+  transform: translateY(-50%) rotate(-40deg);
+}
+
+.BottomNav button::after {
+  right: -12px;
+  transform: translateY(-50%) rotate(-40deg);
+}
+
+.primaryNav button::after {
+  right: 12px;
+  transform: translateY(-50%) rotate(40deg);
+}
+
+/* .BottomNav button.active,
+.primaryNav button.active {
+  color: #c91429;
+} */
+
+.BottomNav button.active::before {
+  transform: translateY(-50%) rotate(-40deg);
+}
+
+.primaryNav button.active::before {
+  transform: translateY(-50%) rotate(40deg);
+}
+
+.BottomNav button.active::after {
+  transform: translateY(-50%) rotate(40deg);
+}
+
+.primaryNav button.active::after {
+  transform: translateY(-50%) rotate(-40deg);
+}
+
+/* Primary nav dropdown arrow */
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hover-custom-gradient:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    #c91429;
+  transition: all 0.5s ease;
+}
+
+/* styles/globals.css or a module CSS file */
+.swiper-pagination-bullet {
+  background: #ccc !important; /* default color */
+  opacity: 1; /* optional: remove Swiper's default opacity */
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important; /* active bullet in red */
+}
+
+.red-cta {
+  position: relative;
+}
+
+.red-cta::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -11px;
+  width: 6px;
+  height: 6px;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  transform: rotate(45deg);
+  transition: all 0.5s linear;
+}
+
+.red-cta:hover::before {
+  right: -18px;
+}
+
+.swiper-pagination-custom-dots .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  border-radius: 9999px;
+  background-color: #fff6f7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-custom-dots .swiper-pagination-bullet-active {
+  background-color: #c91429 !important;
+  border-radius: 20px !important;
+}
+
+/* .hrline:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: auto;
+  bottom: auto;
+  width: 1px;
+  height: 90%;
+  background: rgb(112 112 112 / 20%);
+} */
