@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_search_quick_searches",
+  "info": {
+    "displayName": "Quick Search"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "text"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

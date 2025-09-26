@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_card_blog_cards",
+  "info": {
+    "displayName": "Blog card"
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

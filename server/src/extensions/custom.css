@@ -1,0 +1,17 @@
+.cFaHWY
+
+/* button.cFaHWY[aria-disabled='false'] */
+    {
+    background-color: #b12f2f !important;
+    border-color: #b12f2f !important;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.cFaHWY
+
+/* button.cFaHWY[aria-disabled='false']:hover */
+    {
+    background-color: #D23438 !important;
+    border-color: #D23438 !important;
+}

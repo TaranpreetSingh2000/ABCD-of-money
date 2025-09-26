@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_tab_card_tabs",
+  "info": {
+    "displayName": "Headings card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cardSection": {
+      "type": "component",
+      "component": "card.icon-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

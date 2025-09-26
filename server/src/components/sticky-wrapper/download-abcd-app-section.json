@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_sticky_wrapper_download_abcd_app_sections",
+  "info": {
+    "displayName": "Download ABCD App Section"
+  },
+  "options": {},
+  "attributes": {
+    "stickyModalHeading": {
+      "type": "component",
+      "component": "card.icon-card",
+      "repeatable": false
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

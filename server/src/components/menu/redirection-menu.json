@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_menu_redirection_menus",
+  "info": {
+    "displayName": "Redirection Menu"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

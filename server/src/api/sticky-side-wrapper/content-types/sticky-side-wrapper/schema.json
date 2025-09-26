@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "sticky_side_wrappers",
+  "info": {
+    "singularName": "sticky-side-wrapper",
+    "pluralName": "sticky-side-wrappers",
+    "displayName": "Sticky Side Wrapper"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stickyWrapperComponent": {
+      "type": "component",
+      "component": "sticky-wrapper.sticky-wrapper-section",
+      "repeatable": false
+    }
+  }
+}

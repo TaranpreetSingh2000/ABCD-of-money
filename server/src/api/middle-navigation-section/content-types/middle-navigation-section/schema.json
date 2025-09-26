@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "middle_navigation_sections",
+  "info": {
+    "singularName": "middle-navigation-section",
+    "pluralName": "middle-navigation-sections",
+    "displayName": "Middle Navigation Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "middleNavSection": {
+      "type": "component",
+      "component": "header.middle-navigation-section",
+      "repeatable": false
+    }
+  }
+}

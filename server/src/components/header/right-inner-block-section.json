@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_header_right_inner_block_sections",
+  "info": {
+    "displayName": "Right Inner Block Section"
+  },
+  "options": {},
+  "attributes": {
+    "topCarouselSection": {
+      "type": "component",
+      "component": "carousel.carousel",
+      "repeatable": true
+    },
+    "cardHeading": {
+      "type": "string"
+    },
+    "relatedReadsSection": {
+      "type": "component",
+      "component": "card.media-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

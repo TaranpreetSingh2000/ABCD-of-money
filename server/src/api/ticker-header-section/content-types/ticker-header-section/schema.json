@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "ticker_header_sections",
+  "info": {
+    "singularName": "ticker-header-section",
+    "pluralName": "ticker-header-sections",
+    "displayName": "Ticker Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tickerSectionComponent": {
+      "type": "component",
+      "component": "header.ticker-section",
+      "repeatable": false
+    }
+  }
+}

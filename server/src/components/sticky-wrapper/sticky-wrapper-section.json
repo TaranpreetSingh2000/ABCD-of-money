@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_sticky_wrapper_sticky_wrapper_sections",
+  "info": {
+    "displayName": "Sticky wrapper section"
+  },
+  "options": {},
+  "attributes": {
+    "ourCompaniesSection": {
+      "type": "component",
+      "component": "sticky-wrapper.sticky-wrapper-component",
+      "repeatable": false
+    },
+    "getInTouchSection": {
+      "type": "component",
+      "component": "sticky-wrapper.get-in-touch-section",
+      "repeatable": false
+    },
+    "freeCreditScoreSection": {
+      "type": "component",
+      "component": "sticky-wrapper.credit-score-section",
+      "repeatable": false
+    },
+    "downloadABCDAppSection": {
+      "type": "component",
+      "component": "sticky-wrapper.download-abcd-app-section",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

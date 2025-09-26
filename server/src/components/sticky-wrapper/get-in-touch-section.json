@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_sticky_wrapper_get_in_touch_sections",
+  "info": {
+    "displayName": "Get in Touch Section"
+  },
+  "options": {},
+  "attributes": {
+    "stickyModalHeading": {
+      "type": "component",
+      "component": "card.icon-card",
+      "repeatable": false
+    },
+    "styleHeadingSection": {
+      "type": "component",
+      "component": "style-heading.style-heading",
+      "repeatable": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "tabSection": {
+      "type": "component",
+      "component": "tab.card-tab",
+      "repeatable": true
+    },
+    "otpFormNameSection": {
+      "type": "component",
+      "component": "input-field.input-field",
+      "repeatable": false
+    },
+    "otpFormNumberSection": {
+      "type": "component",
+      "component": "input-field.input-field",
+      "repeatable": false
+    },
+    "otpFormCTA": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

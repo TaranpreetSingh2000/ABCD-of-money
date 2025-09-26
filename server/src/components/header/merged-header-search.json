@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_header_merged_header_searches",
+  "info": {
+    "displayName": "Merged Header Search"
+  },
+  "options": {},
+  "attributes": {
+    "searchIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "leftHeaderSection": {
+      "type": "component",
+      "component": "header.header-search",
+      "repeatable": false
+    },
+    "rightHeaderSection": {
+      "type": "component",
+      "component": "header.right-search-section",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

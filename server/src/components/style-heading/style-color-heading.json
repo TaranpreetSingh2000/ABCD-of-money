@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_style_heading_style_color_headings",
+  "info": {
+    "displayName": "Style color heading"
+  },
+  "options": {},
+  "attributes": {
+    "displayHeading": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

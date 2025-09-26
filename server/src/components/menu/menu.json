@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_menu_menus",
+  "info": {
+    "displayName": "Menu"
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "regex": "^(?!\\s*$).+"
+    },
+    "url": {
+      "type": "text"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

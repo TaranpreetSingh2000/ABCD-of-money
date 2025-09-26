@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_header_right_header_navigation_sections",
+  "info": {
+    "displayName": "Right Header Navigation Section"
+  },
+  "options": {},
+  "attributes": {
+    "searchIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "searchSection": {
+      "type": "component",
+      "component": "header.merged-header-search",
+      "repeatable": false
+    },
+    "rightSideHeaderNavigationView": {
+      "type": "component",
+      "component": "header.merged-inner-block-section",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
