@@ -32,6 +32,12 @@
       "type": "component",
       "component": "seo.seo-configuration",
       "repeatable": false
+    },
+    "sub_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sub-category.sub-category",
+      "inversedBy": "blog_detail_pages"
     }
   }
 }

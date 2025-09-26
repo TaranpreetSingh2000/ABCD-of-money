@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_categories",
+  "info": {
+    "singularName": "sub-category",
+    "pluralName": "sub-categories",
+    "displayName": "Sub Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subCategoryName": {
+      "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "sub_categories"
+    },
+    "blog_detail_pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-detail-page.blog-detail-page",
+      "mappedBy": "sub_category"
+    }
+  }
+}
