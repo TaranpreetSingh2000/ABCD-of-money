@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_footer_footer_social_platforms_sections",
+  "info": {
+    "displayName": "Footer Social Platforms Section"
+  },
+  "options": {},
+  "attributes": {
+    "socialMedia": {
+      "type": "component",
+      "component": "media.media",
+      "repeatable": true,
+      "max": 3
+    },
+    "title": {
+      "type": "string"
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": true,
+      "max": 2
+    }
+  },
+  "config": {}
+}

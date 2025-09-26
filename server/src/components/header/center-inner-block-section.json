@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_header_center_inner_block_sections",
+  "info": {
+    "displayName": "Center Inner Block Section"
+  },
+  "options": {},
+  "attributes": {
+    "topCardBlockSection": {
+      "type": "component",
+      "component": "carousel.carousel",
+      "repeatable": true
+    },
+    "quickSearchHeading": {
+      "type": "string",
+      "required": true,
+      "regex": "^(?!\\s*$).+"
+    },
+    "quickSearchSection": {
+      "type": "component",
+      "component": "search.quick-search",
+      "repeatable": true
+    },
+    "trackCardSection": {
+      "type": "component",
+      "component": "carousel.carousel",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

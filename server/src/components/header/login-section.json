@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_header_login_sections",
+  "info": {
+    "displayName": "Login Section"
+  },
+  "options": {},
+  "attributes": {
+    "ctaButton": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": true,
+      "max": 2
+    }
+  },
+  "config": {}
+}

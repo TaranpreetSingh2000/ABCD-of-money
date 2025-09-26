@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_header_middle_navigation_sections",
+  "info": {
+    "displayName": "Middle Navigation Section"
+  },
+  "options": {},
+  "attributes": {
+    "middleNavLinksSection": {
+      "type": "component",
+      "component": "menu.site-menu",
+      "repeatable": true
+    },
+    "middleNavContactSection": {
+      "type": "component",
+      "component": "menu.menu",
+      "repeatable": true,
+      "max": 2
+    }
+  },
+  "config": {}
+}

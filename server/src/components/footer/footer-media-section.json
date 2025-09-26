@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_footer_footer_media_sections",
+  "info": {
+    "displayName": "Footer Media Section"
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "text"
+    },
+    "contactSection": {
+      "type": "component",
+      "component": "card.card",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

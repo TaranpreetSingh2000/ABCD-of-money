@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sticky_wrapper_credit_score_sections",
+  "info": {
+    "displayName": "Credit score section"
+  },
+  "options": {},
+  "attributes": {
+    "stickyModalHeading": {
+      "type": "component",
+      "component": "card.icon-card",
+      "repeatable": false
+    },
+    "url": {
+      "type": "text"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_list_lists",
+  "info": {
+    "displayName": "List"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subMenuListSection": {
+      "type": "component",
+      "component": "menu.menu",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

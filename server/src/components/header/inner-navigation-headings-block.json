@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_header_inner_navigation_headings_blocks",
+  "info": {
+    "displayName": "Inner Navigation Headings Block"
+  },
+  "options": {},
+  "attributes": {
+    "headingsNavigationBlockSection": {
+      "type": "component",
+      "component": "menu.menu",
+      "repeatable": false
+    },
+    "leftBottomSubBlockSection": {
+      "type": "component",
+      "component": "header.left-inner-block-section",
+      "repeatable": false
+    },
+    "centerSubBlockSection": {
+      "type": "component",
+      "component": "header.center-inner-block-section",
+      "repeatable": false
+    },
+    "rightSubBlockSection": {
+      "type": "component",
+      "component": "header.right-inner-block-section",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

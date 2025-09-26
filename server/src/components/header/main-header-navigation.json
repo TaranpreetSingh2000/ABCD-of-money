@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_header_main_header_navigations",
+  "info": {
+    "displayName": "Main Header Navigation"
+  },
+  "options": {},
+  "attributes": {
+    "headerLogoSection": {
+      "type": "component",
+      "component": "header.header-navigation-section",
+      "repeatable": false
+    },
+    "mainNavHeaderSection": {
+      "type": "component",
+      "component": "header.merged-inner-block-section",
+      "repeatable": true
+    },
+    "rightNavigationSection": {
+      "type": "component",
+      "component": "header.right-header-navigation-section",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_header_right_search_sections",
+  "info": {
+    "displayName": "Right Search Section"
+  },
+  "options": {},
+  "attributes": {
+    "financialSolutionsHeading": {
+      "type": "string"
+    },
+    "financialLeads": {
+      "type": "component",
+      "component": "card.media-card",
+      "repeatable": true
+    },
+    "relatedReadsHeading": {
+      "type": "string"
+    },
+    "relatedReadsCarousel": {
+      "type": "component",
+      "component": "card.media-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

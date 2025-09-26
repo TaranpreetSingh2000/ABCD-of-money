@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_header_header_searches",
+  "info": {
+    "displayName": "Left Header Search"
+  },
+  "options": {},
+  "attributes": {
+    "searchHeading": {
+      "type": "string"
+    },
+    "leftPopularSearchNav": {
+      "type": "component",
+      "component": "search.quick-search",
+      "repeatable": true
+    },
+    "plansHeading": {
+      "type": "string"
+    },
+    "leftTrendingPlansNav": {
+      "type": "component",
+      "component": "carousel.carousel",
+      "repeatable": true
+    },
+    "popularSearchHeading": {
+      "type": "string"
+    },
+    "popularSearchNav": {
+      "type": "component",
+      "component": "search.quick-search",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_header_header_navigation_sections",
+  "info": {
+    "displayName": "Header Navigation Section"
+  },
+  "options": {},
+  "attributes": {
+    "desktopMedia": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "mobileMedia": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "redirectionLogoUrl": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

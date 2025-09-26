@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_menu_site_menus",
+  "info": {
+    "displayName": "Site Menu"
+  },
+  "options": {},
+  "attributes": {
+    "navMenuSection": {
+      "type": "component",
+      "component": "menu.menu",
+      "repeatable": false
+    },
+    "subMenuSection": {
+      "type": "component",
+      "component": "list.list",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

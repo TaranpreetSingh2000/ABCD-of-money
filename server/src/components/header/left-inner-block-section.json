@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_header_left_inner_block_sections",
+  "info": {
+    "displayName": "Left Inner Block Section"
+  },
+  "options": {},
+  "attributes": {
+    "descriptionSection": {
+      "type": "component",
+      "component": "style-heading.style-color-heading",
+      "repeatable": false
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

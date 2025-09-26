@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_header_ticker_sections",
+  "info": {
+    "displayName": "Ticker Section"
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "headingSection": {
+      "type": "component",
+      "component": "style-heading.style-color-heading",
+      "repeatable": false
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

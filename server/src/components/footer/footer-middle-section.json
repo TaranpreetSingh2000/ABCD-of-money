@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_footer_footer_middle_sections",
+  "info": {
+    "displayName": "Footer Middle Section"
+  },
+  "options": {},
+  "attributes": {
+    "footerMediaSection": {
+      "type": "component",
+      "component": "footer.footer-media-section",
+      "repeatable": false
+    },
+    "footerAccordionSection": {
+      "type": "component",
+      "component": "list.redirection-list",
+      "repeatable": true
+    },
+    "footerSocialPlatformSection": {
+      "type": "component",
+      "component": "footer.footer-social-platforms-section",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

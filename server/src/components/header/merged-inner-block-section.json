@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_header_merged_inner_block_sections",
+  "info": {
+    "displayName": "Merged Inner Right Block Section"
+  },
+  "options": {},
+  "attributes": {
+    "view": {
+      "type": "enumeration",
+      "required": true,
+      "default": "column view",
+      "enum": [
+        "column view",
+        "card view"
+      ]
+    },
+    "mainHeaderSubNavigationComponent": {
+      "type": "component",
+      "component": "menu.menu",
+      "repeatable": false
+    },
+    "innerSubBlockHeadingsNavigationComponent": {
+      "type": "component",
+      "component": "header.inner-navigation-headings-block",
+      "repeatable": true
+    },
+    "headerNavigationCardView": {
+      "type": "component",
+      "component": "header.header-card-navigation-view",
+      "repeatable": true
+    },
+    "rightNavCtaSection": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": true,
+      "max": 2
+    }
+  },
+  "config": {}
+}

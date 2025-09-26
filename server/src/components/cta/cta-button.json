@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_cta_cta_buttons",
+  "info": {
+    "displayName": "CTA Button"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "regex": "^(?!\\s*$).+"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "text"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "action": {
+      "type": "enumeration",
+      "default": "link",
+      "enum": [
+        "link",
+        "Read more"
+      ]
+    },
+    "variant": {
+      "type": "enumeration",
+      "default": "default",
+      "enum": [
+        "default",
+        "outline",
+        "white background"
+      ]
+    }
+  },
+  "config": {}
+}
