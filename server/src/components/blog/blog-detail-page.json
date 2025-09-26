@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_blog_blog_detail_pages",
+  "info": {
+    "displayName": "Blog Detail Page"
+  },
+  "options": {},
+  "attributes": {
+    "readingTime": {
+      "type": "string"
+    },
+    "postedOn": {
+      "type": "date"
+    },
+    "updatedOn": {
+      "type": "date"
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "audioFile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "blogSection": {
+      "type": "component",
+      "component": "blog.blog-section",
+      "repeatable": true
+    }
+  }
+}

@@ -373,6 +373,48 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiBlogDetailPageBlogDetailPage
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'blog_detail_pages';
+  info: {
+    displayName: 'Blog Detail Page';
+    pluralName: 'blog-detail-pages';
+    singularName: 'blog-detail-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    blogDetailSection: Schema.Attribute.Component<
+      'blog.blog-detail-page',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::blog-detail-page.blog-detail-page'
+    > &
+      Schema.Attribute.Private;
+    pageProperties: Schema.Attribute.Component<
+      'page-configuration.page-properties',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    seoConfigurations: Schema.Attribute.Component<
+      'seo.seo-configuration',
+      false
+    >;
+    slugTitle: Schema.Attribute.Text;
+    slugURL: Schema.Attribute.UID<'slugTitle'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFooterNoteFooterNote extends Struct.SingleTypeSchema {
   collectionName: 'footer_notes';
   info: {
@@ -1077,6 +1119,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::blog-detail-page.blog-detail-page': ApiBlogDetailPageBlogDetailPage;
       'api::footer-note.footer-note': ApiFooterNoteFooterNote;
       'api::footer.footer': ApiFooterFooter;
       'api::header.header': ApiHeaderHeader;

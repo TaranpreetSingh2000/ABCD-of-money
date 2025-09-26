@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_seo_seo_configurations",
+  "info": {
+    "displayName": "SEO Configuration",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "browserTitle": {
+      "type": "text"
+    },
+    "pageTitle": {
+      "type": "text"
+    },
+    "displayTitle": {
+      "type": "text"
+    },
+    "metaTitle": {
+      "type": "text"
+    },
+    "metaKeywords": {
+      "type": "text"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.tags"
+    },
+    "ogTags": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.og-tags"
+    },
+    "twitterTags": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.twitter-tags"
+    },
+    "robotsConfigurationValues": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.robots-configuration"
+    }
+  }
+}

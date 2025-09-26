@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_seo_robots_configurations",
+  "info": {
+    "displayName": "Robots Configuration",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "index": {
+      "type": "boolean",
+      "default": false
+    },
+    "follow": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

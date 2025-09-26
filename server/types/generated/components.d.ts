@@ -11,6 +11,59 @@ export interface AccordionAccordion extends Struct.ComponentSchema {
   };
 }
 
+export interface AccordionAccordionGrid extends Struct.ComponentSchema {
+  collectionName: 'components_accordion_accordion_grids';
+  info: {
+    displayName: 'AccordionGrid';
+  };
+  attributes: {
+    cardSection: Schema.Attribute.Component<'card.card', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogBlogDetailPage extends Struct.ComponentSchema {
+  collectionName: 'components_blog_blog_detail_pages';
+  info: {
+    displayName: 'Blog Detail Page';
+  };
+  attributes: {
+    audioFile: Schema.Attribute.Media<'audios'>;
+    bannerImage: Schema.Attribute.Media<'images'>;
+    blogSection: Schema.Attribute.Component<'blog.blog-section', true>;
+    postedOn: Schema.Attribute.Date;
+    readingTime: Schema.Attribute.String;
+    updatedOn: Schema.Attribute.Date;
+  };
+}
+
+export interface BlogBlogSection extends Struct.ComponentSchema {
+  collectionName: 'components_blog_blog_sections';
+  info: {
+    description: '';
+    displayName: 'Blog Section';
+  };
+  attributes: {
+    accordionSectionColumnView: Schema.Attribute.Component<
+      'accordion.accordion',
+      true
+    >;
+    accordionSectionGridView: Schema.Attribute.Component<
+      'accordion.accordion-grid',
+      true
+    >;
+    alternateText: Schema.Attribute.String;
+    media: Schema.Attribute.Media<'images'>;
+    richtextContent: Schema.Attribute.Blocks;
+    sectionHeading: Schema.Attribute.Text;
+    tableRichtextContent: Schema.Attribute.RichText;
+    teaserView: Schema.Attribute.Enumeration<['left', 'center', 'right']> &
+      Schema.Attribute.DefaultTo<'center'>;
+    toolTipNote: Schema.Attribute.Component<'tooltip.tooltip', false>;
+    videoUrl: Schema.Attribute.Text;
+  };
+}
+
 export interface CardBlogCard extends Struct.ComponentSchema {
   collectionName: 'components_card_blog_cards';
   info: {
@@ -490,6 +543,24 @@ export interface MenuSiteMenu extends Struct.ComponentSchema {
   };
 }
 
+export interface PageConfigurationPageProperties
+  extends Struct.ComponentSchema {
+  collectionName: 'components_page_configuration_page_properties';
+  info: {
+    displayName: 'Page Properties';
+  };
+  attributes: {
+    addFeaturedArticles: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    addPopular: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    addRecent: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    addRelatedArticles: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    addTrendingArticles: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+  };
+}
+
 export interface SearchQuickSearch extends Struct.ComponentSchema {
   collectionName: 'components_search_quick_searches';
   info: {
@@ -499,6 +570,85 @@ export interface SearchQuickSearch extends Struct.ComponentSchema {
     openInNewTab: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     title: Schema.Attribute.String;
     url: Schema.Attribute.Text;
+  };
+}
+
+export interface SeoOgTags extends Struct.ComponentSchema {
+  collectionName: 'components_seo_og_tags';
+  info: {
+    displayName: 'OG Tags';
+  };
+  attributes: {
+    ogDescription: Schema.Attribute.Text;
+    ogImage: Schema.Attribute.Media<'images'>;
+    ogLocale: Schema.Attribute.String;
+    ogSiteName: Schema.Attribute.Text;
+    ogTitle: Schema.Attribute.Text;
+    ogType: Schema.Attribute.String;
+    ogUrl: Schema.Attribute.String;
+    ogVideo: Schema.Attribute.Media<'videos'>;
+  };
+}
+
+export interface SeoRobotsConfiguration extends Struct.ComponentSchema {
+  collectionName: 'components_seo_robots_configurations';
+  info: {
+    description: '';
+    displayName: 'Robots Configuration';
+  };
+  attributes: {
+    follow: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    index: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+  };
+}
+
+export interface SeoSeoConfiguration extends Struct.ComponentSchema {
+  collectionName: 'components_seo_seo_configurations';
+  info: {
+    description: '';
+    displayName: 'SEO Configuration';
+  };
+  attributes: {
+    browserTitle: Schema.Attribute.Text;
+    displayTitle: Schema.Attribute.Text;
+    metaDescription: Schema.Attribute.Text;
+    metaKeywords: Schema.Attribute.Text;
+    metaTitle: Schema.Attribute.Text;
+    ogTags: Schema.Attribute.Component<'seo.og-tags', false>;
+    pageTitle: Schema.Attribute.Text;
+    robotsConfigurationValues: Schema.Attribute.Component<
+      'seo.robots-configuration',
+      false
+    >;
+    tags: Schema.Attribute.Component<'seo.tags', false>;
+    twitterTags: Schema.Attribute.Component<'seo.twitter-tags', false>;
+  };
+}
+
+export interface SeoTags extends Struct.ComponentSchema {
+  collectionName: 'components_seo_tags';
+  info: {
+    displayName: 'Tags';
+  };
+  attributes: {
+    canonicalTags: Schema.Attribute.Text;
+    customMetaTags: Schema.Attribute.Text;
+    hreflangTags: Schema.Attribute.Text;
+  };
+}
+
+export interface SeoTwitterTags extends Struct.ComponentSchema {
+  collectionName: 'components_seo_twitter_tags';
+  info: {
+    displayName: 'Twitter tags';
+  };
+  attributes: {
+    twitterCard: Schema.Attribute.String;
+    twitterCreator: Schema.Attribute.String;
+    twitterDescription: Schema.Attribute.Text;
+    twitterImage: Schema.Attribute.Media<'images'>;
+    twitterSite: Schema.Attribute.String;
+    twitterTitle: Schema.Attribute.String;
   };
 }
 
@@ -649,10 +799,24 @@ export interface TitleTitle extends Struct.ComponentSchema {
   };
 }
 
+export interface TooltipTooltip extends Struct.ComponentSchema {
+  collectionName: 'components_tooltip_tooltips';
+  info: {
+    displayName: 'Tooltip';
+  };
+  attributes: {
+    media: Schema.Attribute.Media<'images'>;
+    tooltipContent: Schema.Attribute.Blocks;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'accordion.accordion': AccordionAccordion;
+      'accordion.accordion-grid': AccordionAccordionGrid;
+      'blog.blog-detail-page': BlogBlogDetailPage;
+      'blog.blog-section': BlogBlogSection;
       'card.blog-card': CardBlogCard;
       'card.card': CardCard;
       'card.icon-card': CardIconCard;
@@ -684,7 +848,13 @@ declare module '@strapi/strapi' {
       'menu.menu': MenuMenu;
       'menu.redirection-menu': MenuRedirectionMenu;
       'menu.site-menu': MenuSiteMenu;
+      'page-configuration.page-properties': PageConfigurationPageProperties;
       'search.quick-search': SearchQuickSearch;
+      'seo.og-tags': SeoOgTags;
+      'seo.robots-configuration': SeoRobotsConfiguration;
+      'seo.seo-configuration': SeoSeoConfiguration;
+      'seo.tags': SeoTags;
+      'seo.twitter-tags': SeoTwitterTags;
       'social-media.social-media': SocialMediaSocialMedia;
       'sticky-wrapper.credit-score-section': StickyWrapperCreditScoreSection;
       'sticky-wrapper.download-abcd-app-section': StickyWrapperDownloadAbcdAppSection;
@@ -695,6 +865,7 @@ declare module '@strapi/strapi' {
       'style-heading.style-heading': StyleHeadingStyleHeading;
       'tab.card-tab': TabCardTab;
       'title.title': TitleTitle;
+      'tooltip.tooltip': TooltipTooltip;
     }
   }
 }

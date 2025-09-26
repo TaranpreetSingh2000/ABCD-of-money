@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_accordion_accordion_grids",
+  "info": {
+    "displayName": "AccordionGrid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cardSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card.card"
+    }
+  }
+}

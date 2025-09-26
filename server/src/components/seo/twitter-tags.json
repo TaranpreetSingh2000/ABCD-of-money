@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_seo_twitter_tags",
+  "info": {
+    "displayName": "Twitter tags"
+  },
+  "options": {},
+  "attributes": {
+    "twitterSite": {
+      "type": "string"
+    },
+    "twitterTitle": {
+      "type": "string"
+    },
+    "twitterDescription": {
+      "type": "text"
+    },
+    "twitterCreator": {
+      "type": "string"
+    },
+    "twitterCard": {
+      "type": "string"
+    },
+    "twitterImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

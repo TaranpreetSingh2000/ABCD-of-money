@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_tooltip_tooltips",
+  "info": {
+    "displayName": "Tooltip"
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "tooltipContent": {
+      "type": "blocks"
+    }
+  }
+}
