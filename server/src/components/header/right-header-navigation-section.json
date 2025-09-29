@@ -5,17 +5,12 @@
   },
   "options": {},
   "attributes": {
-    "searchIcon": {
+    "rightNavMediaIcon": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
         "images"
       ]
-    },
-    "searchSection": {
-      "type": "component",
-      "component": "header.merged-header-search",
-      "repeatable": false
     },
     "rightSideHeaderNavigationView": {
       "type": "component",

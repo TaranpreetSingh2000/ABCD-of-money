@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_contact_block_contact_blocks",
+  "info": {
+    "displayName": "Contact Block"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "contactField": {
+      "type": "string"
+    },
+    "url": {
+      "type": "text"
+    },
+    "openInNewTab": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

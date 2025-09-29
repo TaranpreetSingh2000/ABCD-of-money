@@ -12,7 +12,7 @@
     },
     "middleNavContactSection": {
       "type": "component",
-      "component": "menu.menu",
+      "component": "contact-block.contact-block",
       "repeatable": true,
       "max": 2
     }

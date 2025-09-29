@@ -4,11 +4,22 @@ import MenuLogo from "../extensions/my-menu-logo.png";
 
 export default {
   config: {
+    head: {
+      title: "ABCD Of Money",
+    },
     auth: {
       logo: AuthLogo,
+      title: "ABCD Of Money",
     },
     menu: {
       logo: MenuLogo,
+    },
+    locales: ["en"],
+    translations: {
+      en: {
+        "Auth.form.welcome.title": "Welcome to ABCD Of Money",
+        "Auth.form.welcome.subtitle": "Log in to your ABCD Of Money account",
+      },
     },
     theme: {
       light: {
@@ -24,5 +35,7 @@ export default {
       },
     },
   },
-  bootstrap() {},
+  bootstrap() {
+    document.title = "ABCD Of Money";
+  },
 };

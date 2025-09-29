@@ -127,6 +127,19 @@ export interface CarouselCarousel extends Struct.ComponentSchema {
   };
 }
 
+export interface ContactBlockContactBlock extends Struct.ComponentSchema {
+  collectionName: 'components_contact_block_contact_blocks';
+  info: {
+    displayName: 'Contact Block';
+  };
+  attributes: {
+    contactField: Schema.Attribute.String;
+    icon: Schema.Attribute.Media<'images'>;
+    openInNewTab: Schema.Attribute.Boolean;
+    url: Schema.Attribute.Text;
+  };
+}
+
 export interface CtaCtaButton extends Struct.ComponentSchema {
   collectionName: 'components_cta_cta_buttons';
   info: {
@@ -238,6 +251,16 @@ export interface HeaderHeaderNavigationSection extends Struct.ComponentSchema {
     desktopMedia: Schema.Attribute.Media<'images'>;
     mobileMedia: Schema.Attribute.Media<'images'>;
     redirectionLogoUrl: Schema.Attribute.String;
+    rightNavMobileContactSection: Schema.Attribute.Component<
+      'contact-block.contact-block',
+      true
+    > &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 3;
+        },
+        number
+      >;
   };
 }
 
@@ -391,7 +414,10 @@ export interface HeaderMiddleNavigationSection extends Struct.ComponentSchema {
     displayName: 'Middle Navigation Section';
   };
   attributes: {
-    middleNavContactSection: Schema.Attribute.Component<'menu.menu', true> &
+    middleNavContactSection: Schema.Attribute.Component<
+      'contact-block.contact-block',
+      true
+    > &
       Schema.Attribute.SetMinMax<
         {
           max: 2;
@@ -409,14 +435,10 @@ export interface HeaderRightHeaderNavigationSection
     displayName: 'Right Header Navigation Section';
   };
   attributes: {
+    rightNavMediaIcon: Schema.Attribute.Media<'images'>;
     rightSideHeaderNavigationView: Schema.Attribute.Component<
       'header.merged-inner-block-section',
       true
-    >;
-    searchIcon: Schema.Attribute.Media<'images'>;
-    searchSection: Schema.Attribute.Component<
-      'header.merged-header-search',
-      false
     >;
   };
 }
@@ -822,6 +844,7 @@ declare module '@strapi/strapi' {
       'card.icon-card': CardIconCard;
       'card.media-card': CardMediaCard;
       'carousel.carousel': CarouselCarousel;
+      'contact-block.contact-block': ContactBlockContactBlock;
       'cta.cta-button': CtaCtaButton;
       'footer.footer-media-section': FooterFooterMediaSection;
       'footer.footer-middle-section': FooterFooterMiddleSection;
