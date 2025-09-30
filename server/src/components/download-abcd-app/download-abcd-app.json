@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_download_abcd_app_download_abcd_apps",
+  "info": {
+    "displayName": "Download ABCD App"
+  },
+  "options": {},
+  "attributes": {
+    "downloadAbcdHeading": {
+      "type": "component",
+      "component": "style-heading.style-heading",
+      "repeatable": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "downloadMobileAppHeading": {
+      "type": "string"
+    },
+    "downloadCtaSection": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": true,
+      "max": 2
+    }
+  },
+  "config": {}
+}

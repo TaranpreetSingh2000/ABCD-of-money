@@ -14,10 +14,10 @@
     "subCategoryName": {
       "type": "string"
     },
-     "subCategorySlug": {
+    "subCategorySlug": {
       "type": "uid",
       "targetField": "subCategoryName",
-      "required": true
+      "required": false
     },
     "category": {
       "type": "relation",
@@ -31,6 +31,5 @@
       "target": "api::blog-detail-page.blog-detail-page",
       "mappedBy": "sub_category"
     }
-   
   }
 }

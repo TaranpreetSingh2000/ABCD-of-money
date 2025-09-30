@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_login_module_user_input_forms",
+  "info": {
+    "displayName": "User Input form"
+  },
+  "options": {},
+  "attributes": {
+    "userFormHeading": {
+      "type": "string"
+    },
+    "selectPlanIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "plansSection": {
+      "type": "component",
+      "component": "card.icon-card",
+      "repeatable": true
+    },
+    "inputNameField": {
+      "type": "component",
+      "component": "input-field.input-field",
+      "repeatable": false
+    },
+    "inputMobileField": {
+      "type": "component",
+      "component": "input-field.input-field",
+      "repeatable": false
+    },
+    "termsConditionCheckSection": {
+      "type": "component",
+      "component": "input-field.input-link",
+      "repeatable": false
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

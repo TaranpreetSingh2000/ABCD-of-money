@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_login_module_form_submission_s",
+  "info": {
+    "displayName": "Form Submission "
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "successMessage": {
+      "type": "string"
+    },
+    "successDescription": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

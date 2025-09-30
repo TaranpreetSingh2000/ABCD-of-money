@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_input_field_input_links",
+  "info": {
+    "displayName": "Input Link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "regex": "^(?!\\s*$).+",
+      "required": true
+    },
+    "termsConditionLabel": {
+      "type": "string",
+      "required": true,
+      "regex": "^(?!\\s*$).+"
+    },
+    "termsConditionLink": {
+      "type": "string"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

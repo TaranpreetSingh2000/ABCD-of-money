@@ -29,6 +29,7 @@
       "default": "link",
       "enum": [
         "link",
+        "Click",
         "Read more"
       ]
     },
@@ -38,7 +39,8 @@
       "enum": [
         "default",
         "outline",
-        "white background"
+        "white background",
+        "no bg"
       ]
     }
   },

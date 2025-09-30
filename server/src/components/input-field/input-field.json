@@ -5,6 +5,13 @@
   },
   "options": {},
   "attributes": {
+     "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "inputFieldType": {
       "type": "enumeration",
       "required": true,
@@ -25,6 +32,7 @@
       "required": true,
       "regex": "^(?!\\s*$).+"
     }
+   
   },
   "config": {}
 }

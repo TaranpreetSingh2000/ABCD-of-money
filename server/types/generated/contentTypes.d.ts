@@ -431,8 +431,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
   attributes: {
     categoryName: Schema.Attribute.String;
-    categorySlug: Schema.Attribute.UID<'categoryName'> &
-      Schema.Attribute.Required;
+    categorySlug: Schema.Attribute.UID<'categoryName'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -552,6 +551,76 @@ export interface ApiHeaderHeader extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
+  collectionName: 'homepages';
+  info: {
+    displayName: 'Home';
+    pluralName: 'homepages';
+    singularName: 'homepage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    downloadABCDSection: Schema.Attribute.Component<
+      'download-abcd-app.download-abcd-app',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::homepage.homepage'
+    > &
+      Schema.Attribute.Private;
+    popularSearchesSection: Schema.Attribute.Component<
+      'popular-search.popular-searches',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiLoginModuleLoginModule extends Struct.SingleTypeSchema {
+  collectionName: 'login_modules';
+  info: {
+    displayName: 'login Module';
+    pluralName: 'login-modules';
+    singularName: 'login-module';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    carouselSection: Schema.Attribute.Component<
+      'carousel.login-carousel',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::login-module.login-module'
+    > &
+      Schema.Attribute.Private;
+    loginModuleSection: Schema.Attribute.Component<
+      'login-module.login-module',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiMiddleNavigationSectionMiddleNavigationSection
   extends Struct.SingleTypeSchema {
   collectionName: 'middle_navigation_sections';
@@ -643,8 +712,7 @@ export interface ApiSubCategorySubCategory extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     subCategoryName: Schema.Attribute.String;
-    subCategorySlug: Schema.Attribute.UID<'subCategoryName'> &
-      Schema.Attribute.Required;
+    subCategorySlug: Schema.Attribute.UID<'subCategoryName'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1197,6 +1265,8 @@ declare module '@strapi/strapi' {
       'api::footer-note.footer-note': ApiFooterNoteFooterNote;
       'api::footer.footer': ApiFooterFooter;
       'api::header.header': ApiHeaderHeader;
+      'api::homepage.homepage': ApiHomepageHomepage;
+      'api::login-module.login-module': ApiLoginModuleLoginModule;
       'api::middle-navigation-section.middle-navigation-section': ApiMiddleNavigationSectionMiddleNavigationSection;
       'api::sticky-side-wrapper.sticky-side-wrapper': ApiStickySideWrapperStickySideWrapper;
       'api::sub-category.sub-category': ApiSubCategorySubCategory;

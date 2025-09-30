@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_login_module_otp_verification_forms",
+  "info": {
+    "displayName": "OTP Verification form"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "verificationLabel": {
+      "type": "string"
+    },
+    "verificationCTASection": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

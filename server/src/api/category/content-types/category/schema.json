@@ -17,7 +17,7 @@
     "categorySlug": {
       "type": "uid",
       "targetField": "categoryName",
-      "required": true
+      "required": false
     },
     "sub_categories": {
       "type": "relation",
