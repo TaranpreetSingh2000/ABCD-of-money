@@ -12,7 +12,7 @@ const DownloadAppModal = ({ isOpen, onClose }) => {
           }`}
         ></div>
         <div
-          className={`max-w-[500px] w-[415px] p-10 bg-white h-screen min-h-screen overflow-y-auto no-scrollbar fixed transform transition-all duration-500 ${
+           className={`fixed top-0 max-w-[500px] w-[415px] p-10 h-screen min-h-screen overflow-y-auto no-scrollbar bg-white shadow-lg transform transition-all duration-500 ease-in-out ${
             isOpen ? "right-0" : "-right-full"
           }`}
         >

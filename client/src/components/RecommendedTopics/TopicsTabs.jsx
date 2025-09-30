@@ -1,6 +1,5 @@
 import React from "react";
 import TopicCard from "./TopicCard";
-import {GLOBAL_COLOR_CODES} from "@/constant/colors"
 
 const TopicsTabs = ({ activeTab, data }) => {
   console.log("Data for active tab:", data);
@@ -26,7 +25,6 @@ const TopicsTabs = ({ activeTab, data }) => {
                 {section.items.map((item, i) => (
                   <TopicCard
                     key={i}
-                    borderBase={GLOBAL_COLOR_CODES}
                     {...item}
                   />
                 ))}
@@ -55,7 +53,6 @@ const TopicsTabs = ({ activeTab, data }) => {
                   {section.items.map((item, i) => (
                     <TopicCard
                       key={i}
-                      borderBase={GLOBAL_COLOR_CODES}
                       {...item}
                     />
                   ))}
