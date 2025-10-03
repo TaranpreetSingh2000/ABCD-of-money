@@ -9,6 +9,9 @@ import JourneyFlow from "@/components/JourneyFlow";
 import Carousel from "@/components/imageSlider";
 import InsurancePage from "@/components/InsurancePage";
 import TipCard from "@/components/tip";
+import Accordion from "../components/LifeInAccordion";
+import FeaturedArticles from "../components/FeaturedArticles";
+import RelatedArticles from "../components/RelatedArticles";
 
 export default function Home() {
   return (
@@ -23,6 +26,9 @@ export default function Home() {
       <RecommendedTopics />
       <DiscoverConvenience />
       <FooterCard />
+      <Accordion/>
+      <FeaturedArticles/>
+      <RelatedArticles/>
       {/* <div className="max-w-[1440px] mx-auto">
         <div className="h-screen bg-[#F4EDD7]"></div>
         <div className="h-screen bg-[#F4EDD7]"></div>
