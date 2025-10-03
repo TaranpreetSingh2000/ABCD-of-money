@@ -6,9 +6,10 @@
   --breakpoint-large: 1440px;
 }
 
-body {
+/* body {
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
+ 
 /* Bottom nav dropdown arrow */
 .BottomNav button,
 .primaryNav button {
@@ -164,3 +165,28 @@ body {
   height: 90%;
   background: rgb(112 112 112 / 20%);
 } */
+
+/* for hiding the scrollbar */
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; 
+  }
+}
+
+/* for image movement up and down */
+@keyframes small-bounce {
+  0%, 100% {
+    transform: translateY(-10px);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: ease-in-out;
+  }
+}
+.small-bounce {
+  animation: small-bounce 1.8s infinite ;
+}

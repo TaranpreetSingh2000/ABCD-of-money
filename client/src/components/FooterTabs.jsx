@@ -117,7 +117,7 @@ export default function FooterTabs() {
                     aria-selected={isActive}
                     aria-controls={`tabpanel-${index}`}
                     onClick={() => setActiveTab(index)}
-                    className={`w-full text-left font-mono text-xs xl:text-sm flex items-start xl:items-center p-2 ${
+                    className={`w-full text-left text-xs xl:text-sm flex items-start xl:items-center p-2 ${
                       isActive ? "bg-[#ebebeb] text-gray-900 rounded-t-lg font-bold" : "font-bold"
                     }`}
                   >

@@ -12,13 +12,10 @@
     "richtextContent": {
       "type": "blocks"
     },
-    "tableRichtextContent": {
-      "type": "richtext"
-    },
     "toolTipNote": {
       "type": "component",
-      "repeatable": false,
-      "component": "tooltip.tooltip"
+      "component": "tooltip.tooltip",
+      "repeatable": false
     },
     "media": {
       "type": "media",
@@ -30,12 +27,12 @@
     },
     "teaserView": {
       "type": "enumeration",
+      "default": "center",
       "enum": [
         "left",
         "center",
         "right"
-      ],
-      "default": "center"
+      ]
     },
     "alternateText": {
       "type": "string"
@@ -45,13 +42,13 @@
     },
     "accordionSectionColumnView": {
       "type": "component",
-      "repeatable": true,
-      "component": "accordion.accordion"
+      "component": "accordion.accordion",
+      "repeatable": true
     },
     "accordionSectionGridView": {
       "type": "component",
-      "repeatable": true,
-      "component": "accordion.accordion-grid"
+      "component": "accordion.accordion-grid",
+      "repeatable": true
     }
   }
 }

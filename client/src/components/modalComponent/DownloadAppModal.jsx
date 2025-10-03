@@ -4,7 +4,7 @@ import React from "react";
 const DownloadAppModal = ({ isOpen, onClose }) => {
   return (
     <>
-      <div className="relative z-10">
+      <div className="relative z-50">
         <div
           onClick={onClose}
           className={`bg-black inset-0 fixed transition-opacity duration-500 ${
@@ -12,8 +12,8 @@ const DownloadAppModal = ({ isOpen, onClose }) => {
           }`}
         ></div>
         <div
-          className={`max-w-[500px] w-[415px] p-10 bg-white h-screen min-h-screen overflow-y-auto no-scrollbar fixed transform transition-all duration-500 ${
-            isOpen ? "right-0" : "-right-full"
+           className={`fixed top-0 max-w-[500px] w-[415px] p-10 h-screen min-h-screen overflow-y-auto no-scrollbar bg-white shadow-lg transform transition-all duration-500 ease-in-out ${
+            isOpen ? "right-0 z-99" : "-right-full"
           }`}
         >
           <button onClick={onClose} className="text-3xl absolute top-3 right-8">

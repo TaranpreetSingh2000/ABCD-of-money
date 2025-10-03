@@ -1963,7 +1963,7 @@ const Header = () => {
 
   return (
     <header // top-11
-      className={`fixed top-0 w-full transition-all duration-500 bg-white ${
+      className={`sticky top-0 z-40 w-full transition-all duration-500 bg-white ${
         hideSecNav ? "-translate-y-[53px]" : "translate-y-0" // "-translate-y-24" : "translate-y-0"
       }`}
     >

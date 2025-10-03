@@ -56,7 +56,6 @@ export interface BlogBlogSection extends Struct.ComponentSchema {
     media: Schema.Attribute.Media<'images'>;
     richtextContent: Schema.Attribute.Blocks;
     sectionHeading: Schema.Attribute.Text;
-    tableRichtextContent: Schema.Attribute.RichText;
     teaserView: Schema.Attribute.Enumeration<['left', 'center', 'right']> &
       Schema.Attribute.DefaultTo<'center'>;
     toolTipNote: Schema.Attribute.Component<'tooltip.tooltip', false>;

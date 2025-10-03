@@ -41,8 +41,6 @@ export default function DisclaimerAccordion() {
           const isOpen = openIndex === index;
           const panelId = `panel-${index}`;
           const headingId = `heading-${index}`;
-          console.log(panelId, '--panelId');
-          console.log(headingId, '--HeadingId');
       
           return (
             <div

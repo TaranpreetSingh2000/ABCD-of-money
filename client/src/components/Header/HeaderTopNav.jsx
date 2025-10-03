@@ -18,7 +18,6 @@ const HeaderTopNav = ({
   const [activeNonDropdown, setActiveNonDropdown] = useState("PERSONAL");
 
   // console.log(secondaryNavigation);
-  console.log(activeDropdown);
 
   useEffect(() => {
     setMounted(true);

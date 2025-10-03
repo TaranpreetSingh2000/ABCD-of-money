@@ -75,14 +75,11 @@ const HeaderBottomNav = ({
 
   return (
     <>
-      <div className="bg-white max-lg:hidden z-20">
+      <div className="bg-white max-lg:hidden z-40">
         <div className="BottomNav mx-auto max-w-[1440px] flex justify-start pl-[140px] py-[15px]">
           <div className="flex text-sm items-center gap-7.5">
             {links.map((link, index) => {
-              // console.log(
-              //   link.dataTarget,
-              //   "BottomHeader ---------------------------"
-              // );
+             
               return (
                 <div key={index}>
                   <button
