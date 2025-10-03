@@ -21,6 +21,12 @@
     },
     "redirectionLogoUrl": {
       "type": "string"
+    },
+    "rightNavMobileContactSection": {
+      "type": "component",
+      "component": "contact-block.contact-block",
+      "repeatable": true,
+      "max": 3
     }
   },
   "config": {}

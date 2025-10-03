@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "popularSearchesSection": {
+      "type": "component",
+      "component": "popular-search.popular-searches",
+      "repeatable": false
+    },
+    "downloadABCDSection": {
+      "type": "component",
+      "component": "download-abcd-app.download-abcd-app",
+      "repeatable": false
+    }
+  }
+}

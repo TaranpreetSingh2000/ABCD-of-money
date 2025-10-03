@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_seo_og_tags",
+  "info": {
+    "displayName": "OG Tags"
+  },
+  "options": {},
+  "attributes": {
+    "ogTitle": {
+      "type": "text"
+    },
+    "ogDescription": {
+      "type": "text"
+    },
+    "ogType": {
+      "type": "string"
+    },
+    "ogSiteName": {
+      "type": "text"
+    },
+    "ogImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ogUrl": {
+      "type": "string"
+    },
+    "ogLocale": {
+      "type": "string"
+    },
+    "ogVideo": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

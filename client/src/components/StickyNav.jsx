@@ -20,7 +20,7 @@ const StickyNav = () => {
 
   return (
     <>
-    <div className="hidden lg:block fixed z-10 rounded-l-xl bg-white right-0 top-[30%]">
+    <div className="hidden lg:block fixed z-10 rounded-l-xl bg-white right-0 top-[30%] shadow-2xl">
       <ul className="rounded-l-xl max-w-[60px] border border-gray-50">
         <li onClick={() => openModal('ourCompanies')} className="group rounded-tl-xl flex items-center text-center p-2 justify-center border-b border-b-[#ccc] transition-all duration-500 hover:bg-red-700">
           <span

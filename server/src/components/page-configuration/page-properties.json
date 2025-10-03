@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_page_configuration_page_properties",
+  "info": {
+    "displayName": "Page Properties"
+  },
+  "options": {},
+  "attributes": {
+    "addRelatedArticles": {
+      "type": "boolean",
+      "default": false
+    },
+    "addRecent": {
+      "type": "boolean",
+      "default": false
+    },
+    "addPopular": {
+      "type": "boolean",
+      "default": false
+    },
+    "addFeaturedArticles": {
+      "type": "boolean",
+      "default": false
+    },
+    "addTrendingArticles": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

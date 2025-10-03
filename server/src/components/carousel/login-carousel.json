@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_carousel_login_carousels",
+  "info": {
+    "displayName": "Login Carousel"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "cta.cta-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

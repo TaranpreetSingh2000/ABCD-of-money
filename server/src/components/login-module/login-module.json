@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_login_module_login_modules",
+  "info": {
+    "displayName": "login Module"
+  },
+  "options": {},
+  "attributes": {
+    "userInputFormSection": {
+      "type": "component",
+      "component": "login-module.user-input-form",
+      "repeatable": false
+    },
+    "verificationOTPSection": {
+      "type": "component",
+      "component": "login-module.otp-verification-form",
+      "repeatable": false
+    },
+    "submissionSection": {
+      "type": "component",
+      "component": "login-module.form-submission",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

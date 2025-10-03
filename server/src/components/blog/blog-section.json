@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_blog_blog_sections",
+  "info": {
+    "displayName": "Blog Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sectionHeading": {
+      "type": "text"
+    },
+    "richtextContent": {
+      "type": "blocks"
+    },
+    "toolTipNote": {
+      "type": "component",
+      "component": "tooltip.tooltip",
+      "repeatable": false
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "teaserView": {
+      "type": "enumeration",
+      "default": "center",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    },
+    "alternateText": {
+      "type": "string"
+    },
+    "videoUrl": {
+      "type": "text"
+    },
+    "accordionSectionColumnView": {
+      "type": "component",
+      "component": "accordion.accordion",
+      "repeatable": true
+    },
+    "accordionSectionGridView": {
+      "type": "component",
+      "component": "accordion.accordion-grid",
+      "repeatable": true
+    }
+  }
+}

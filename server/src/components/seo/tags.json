@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_seo_tags",
+  "info": {
+    "displayName": "Tags"
+  },
+  "options": {},
+  "attributes": {
+    "customMetaTags": {
+      "type": "text"
+    },
+    "canonicalTags": {
+      "type": "text"
+    },
+    "hreflangTags": {
+      "type": "text"
+    }
+  }
+}

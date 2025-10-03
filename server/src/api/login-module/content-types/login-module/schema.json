@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "login_modules",
+  "info": {
+    "singularName": "login-module",
+    "pluralName": "login-modules",
+    "displayName": "login Module"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "loginModuleSection": {
+      "type": "component",
+      "component": "login-module.login-module",
+      "repeatable": false
+    },
+    "carouselSection": {
+      "type": "component",
+      "component": "carousel.login-carousel",
+      "repeatable": true
+    }
+  }
+}

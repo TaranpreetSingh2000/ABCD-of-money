@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function OurCompaniesModal({ isOpen, onClose }) {
   return (
     <>
-      <div className="relative z-10">
+      <div className="relative z-50">
         <div onClick={onClose} className={`fixed inset-0 bg-black transition-opacity duration-500 ${isOpen ? "opacity-55" : "opacity-0 pointer-events-none"}`}></div>
           
         <div

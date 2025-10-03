@@ -11,6 +11,58 @@ export interface AccordionAccordion extends Struct.ComponentSchema {
   };
 }
 
+export interface AccordionAccordionGrid extends Struct.ComponentSchema {
+  collectionName: 'components_accordion_accordion_grids';
+  info: {
+    displayName: 'AccordionGrid';
+  };
+  attributes: {
+    cardSection: Schema.Attribute.Component<'card.card', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogBlogDetailPage extends Struct.ComponentSchema {
+  collectionName: 'components_blog_blog_detail_pages';
+  info: {
+    displayName: 'Blog Detail Page';
+  };
+  attributes: {
+    audioFile: Schema.Attribute.Media<'audios'>;
+    bannerImage: Schema.Attribute.Media<'images'>;
+    blogSection: Schema.Attribute.Component<'blog.blog-section', true>;
+    postedOn: Schema.Attribute.Date;
+    readingTime: Schema.Attribute.String;
+    updatedOn: Schema.Attribute.Date;
+  };
+}
+
+export interface BlogBlogSection extends Struct.ComponentSchema {
+  collectionName: 'components_blog_blog_sections';
+  info: {
+    description: '';
+    displayName: 'Blog Section';
+  };
+  attributes: {
+    accordionSectionColumnView: Schema.Attribute.Component<
+      'accordion.accordion',
+      true
+    >;
+    accordionSectionGridView: Schema.Attribute.Component<
+      'accordion.accordion-grid',
+      true
+    >;
+    alternateText: Schema.Attribute.String;
+    media: Schema.Attribute.Media<'images'>;
+    richtextContent: Schema.Attribute.Blocks;
+    sectionHeading: Schema.Attribute.Text;
+    teaserView: Schema.Attribute.Enumeration<['left', 'center', 'right']> &
+      Schema.Attribute.DefaultTo<'center'>;
+    toolTipNote: Schema.Attribute.Component<'tooltip.tooltip', false>;
+    videoUrl: Schema.Attribute.Text;
+  };
+}
+
 export interface CardBlogCard extends Struct.ComponentSchema {
   collectionName: 'components_card_blog_cards';
   info: {
@@ -74,22 +126,69 @@ export interface CarouselCarousel extends Struct.ComponentSchema {
   };
 }
 
+export interface CarouselLoginCarousel extends Struct.ComponentSchema {
+  collectionName: 'components_carousel_login_carousels';
+  info: {
+    displayName: 'Login Carousel';
+  };
+  attributes: {
+    ctaSection: Schema.Attribute.Component<'cta.cta-button', false>;
+    icon: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ContactBlockContactBlock extends Struct.ComponentSchema {
+  collectionName: 'components_contact_block_contact_blocks';
+  info: {
+    displayName: 'Contact Block';
+  };
+  attributes: {
+    contactField: Schema.Attribute.String;
+    icon: Schema.Attribute.Media<'images'>;
+    openInNewTab: Schema.Attribute.Boolean;
+    url: Schema.Attribute.Text;
+  };
+}
+
 export interface CtaCtaButton extends Struct.ComponentSchema {
   collectionName: 'components_cta_cta_buttons';
   info: {
     displayName: 'CTA Button';
   };
   attributes: {
-    action: Schema.Attribute.Enumeration<['link', 'Read more']> &
+    action: Schema.Attribute.Enumeration<['link', 'Click', 'Read more']> &
       Schema.Attribute.DefaultTo<'link'>;
     media: Schema.Attribute.Media<'images', true>;
     openInNewTab: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     url: Schema.Attribute.Text;
     variant: Schema.Attribute.Enumeration<
-      ['default', 'outline', 'white background']
+      ['default', 'outline', 'white background', 'no bg']
     > &
       Schema.Attribute.DefaultTo<'default'>;
+  };
+}
+
+export interface DownloadAbcdAppDownloadAbcdApp extends Struct.ComponentSchema {
+  collectionName: 'components_download_abcd_app_download_abcd_apps';
+  info: {
+    displayName: 'Download ABCD App';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    downloadAbcdHeading: Schema.Attribute.Component<
+      'style-heading.style-heading',
+      true
+    >;
+    downloadCtaSection: Schema.Attribute.Component<'cta.cta-button', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 2;
+        },
+        number
+      >;
+    downloadMobileAppHeading: Schema.Attribute.String;
   };
 }
 
@@ -185,6 +284,16 @@ export interface HeaderHeaderNavigationSection extends Struct.ComponentSchema {
     desktopMedia: Schema.Attribute.Media<'images'>;
     mobileMedia: Schema.Attribute.Media<'images'>;
     redirectionLogoUrl: Schema.Attribute.String;
+    rightNavMobileContactSection: Schema.Attribute.Component<
+      'contact-block.contact-block',
+      true
+    > &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 3;
+        },
+        number
+      >;
   };
 }
 
@@ -338,7 +447,10 @@ export interface HeaderMiddleNavigationSection extends Struct.ComponentSchema {
     displayName: 'Middle Navigation Section';
   };
   attributes: {
-    middleNavContactSection: Schema.Attribute.Component<'menu.menu', true> &
+    middleNavContactSection: Schema.Attribute.Component<
+      'contact-block.contact-block',
+      true
+    > &
       Schema.Attribute.SetMinMax<
         {
           max: 2;
@@ -356,14 +468,10 @@ export interface HeaderRightHeaderNavigationSection
     displayName: 'Right Header Navigation Section';
   };
   attributes: {
+    rightNavMediaIcon: Schema.Attribute.Media<'images'>;
     rightSideHeaderNavigationView: Schema.Attribute.Component<
       'header.merged-inner-block-section',
       true
-    >;
-    searchIcon: Schema.Attribute.Media<'images'>;
-    searchSection: Schema.Attribute.Component<
-      'header.merged-header-search',
-      false
     >;
   };
 }
@@ -414,11 +522,25 @@ export interface InputFieldInputField extends Struct.ComponentSchema {
     displayName: 'Input Field';
   };
   attributes: {
+    icon: Schema.Attribute.Media<'images'>;
     inputFieldLabel: Schema.Attribute.String & Schema.Attribute.Required;
     inputFieldPlaceholder: Schema.Attribute.String & Schema.Attribute.Required;
     inputFieldType: Schema.Attribute.Enumeration<['text', 'number', 'email']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'text'>;
+  };
+}
+
+export interface InputFieldInputLink extends Struct.ComponentSchema {
+  collectionName: 'components_input_field_input_links';
+  info: {
+    displayName: 'Input Link';
+  };
+  attributes: {
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    openInNewTab: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    termsConditionLabel: Schema.Attribute.String & Schema.Attribute.Required;
+    termsConditionLink: Schema.Attribute.String;
   };
 }
 
@@ -441,6 +563,76 @@ export interface ListRedirectionList extends Struct.ComponentSchema {
   attributes: {
     heading: Schema.Attribute.String;
     subMenuList: Schema.Attribute.Component<'menu.redirection-menu', true>;
+  };
+}
+
+export interface LoginModuleFormSubmission extends Struct.ComponentSchema {
+  collectionName: 'components_login_module_form_submission_s';
+  info: {
+    displayName: 'Form Submission ';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images'>;
+    successDescription: Schema.Attribute.Text;
+    successMessage: Schema.Attribute.String;
+  };
+}
+
+export interface LoginModuleLoginModule extends Struct.ComponentSchema {
+  collectionName: 'components_login_module_login_modules';
+  info: {
+    displayName: 'login Module';
+  };
+  attributes: {
+    submissionSection: Schema.Attribute.Component<
+      'login-module.form-submission',
+      false
+    >;
+    userInputFormSection: Schema.Attribute.Component<
+      'login-module.user-input-form',
+      false
+    >;
+    verificationOTPSection: Schema.Attribute.Component<
+      'login-module.otp-verification-form',
+      false
+    >;
+  };
+}
+
+export interface LoginModuleOtpVerificationForm extends Struct.ComponentSchema {
+  collectionName: 'components_login_module_otp_verification_forms';
+  info: {
+    displayName: 'OTP Verification form';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    verificationCTASection: Schema.Attribute.Component<'cta.cta-button', false>;
+    verificationLabel: Schema.Attribute.String;
+  };
+}
+
+export interface LoginModuleUserInputForm extends Struct.ComponentSchema {
+  collectionName: 'components_login_module_user_input_forms';
+  info: {
+    displayName: 'User Input form';
+  };
+  attributes: {
+    ctaSection: Schema.Attribute.Component<'cta.cta-button', false>;
+    inputMobileField: Schema.Attribute.Component<
+      'input-field.input-field',
+      false
+    >;
+    inputNameField: Schema.Attribute.Component<
+      'input-field.input-field',
+      false
+    >;
+    plansSection: Schema.Attribute.Component<'card.icon-card', true>;
+    selectPlanIcon: Schema.Attribute.Media<'images'>;
+    termsConditionCheckSection: Schema.Attribute.Component<
+      'input-field.input-link',
+      false
+    >;
+    userFormHeading: Schema.Attribute.String;
   };
 }
 
@@ -490,6 +682,35 @@ export interface MenuSiteMenu extends Struct.ComponentSchema {
   };
 }
 
+export interface PageConfigurationPageProperties
+  extends Struct.ComponentSchema {
+  collectionName: 'components_page_configuration_page_properties';
+  info: {
+    displayName: 'Page Properties';
+  };
+  attributes: {
+    addFeaturedArticles: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    addPopular: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    addRecent: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    addRelatedArticles: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    addTrendingArticles: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+  };
+}
+
+export interface PopularSearchPopularSearches extends Struct.ComponentSchema {
+  collectionName: 'components_popular_search_popular_searches';
+  info: {
+    displayName: 'Popular Searches';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    popularSearches: Schema.Attribute.Component<'menu.redirection-menu', true>;
+  };
+}
+
 export interface SearchQuickSearch extends Struct.ComponentSchema {
   collectionName: 'components_search_quick_searches';
   info: {
@@ -499,6 +720,85 @@ export interface SearchQuickSearch extends Struct.ComponentSchema {
     openInNewTab: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     title: Schema.Attribute.String;
     url: Schema.Attribute.Text;
+  };
+}
+
+export interface SeoOgTags extends Struct.ComponentSchema {
+  collectionName: 'components_seo_og_tags';
+  info: {
+    displayName: 'OG Tags';
+  };
+  attributes: {
+    ogDescription: Schema.Attribute.Text;
+    ogImage: Schema.Attribute.Media<'images'>;
+    ogLocale: Schema.Attribute.String;
+    ogSiteName: Schema.Attribute.Text;
+    ogTitle: Schema.Attribute.Text;
+    ogType: Schema.Attribute.String;
+    ogUrl: Schema.Attribute.String;
+    ogVideo: Schema.Attribute.Media<'videos'>;
+  };
+}
+
+export interface SeoRobotsConfiguration extends Struct.ComponentSchema {
+  collectionName: 'components_seo_robots_configurations';
+  info: {
+    description: '';
+    displayName: 'Robots Configuration';
+  };
+  attributes: {
+    follow: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    index: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+  };
+}
+
+export interface SeoSeoConfiguration extends Struct.ComponentSchema {
+  collectionName: 'components_seo_seo_configurations';
+  info: {
+    description: '';
+    displayName: 'SEO Configuration';
+  };
+  attributes: {
+    browserTitle: Schema.Attribute.Text;
+    displayTitle: Schema.Attribute.Text;
+    metaDescription: Schema.Attribute.Text;
+    metaKeywords: Schema.Attribute.Text;
+    metaTitle: Schema.Attribute.Text;
+    ogTags: Schema.Attribute.Component<'seo.og-tags', false>;
+    pageTitle: Schema.Attribute.Text;
+    robotsConfigurationValues: Schema.Attribute.Component<
+      'seo.robots-configuration',
+      false
+    >;
+    tags: Schema.Attribute.Component<'seo.tags', false>;
+    twitterTags: Schema.Attribute.Component<'seo.twitter-tags', false>;
+  };
+}
+
+export interface SeoTags extends Struct.ComponentSchema {
+  collectionName: 'components_seo_tags';
+  info: {
+    displayName: 'Tags';
+  };
+  attributes: {
+    canonicalTags: Schema.Attribute.Text;
+    customMetaTags: Schema.Attribute.Text;
+    hreflangTags: Schema.Attribute.Text;
+  };
+}
+
+export interface SeoTwitterTags extends Struct.ComponentSchema {
+  collectionName: 'components_seo_twitter_tags';
+  info: {
+    displayName: 'Twitter tags';
+  };
+  attributes: {
+    twitterCard: Schema.Attribute.String;
+    twitterCreator: Schema.Attribute.String;
+    twitterDescription: Schema.Attribute.Text;
+    twitterImage: Schema.Attribute.Media<'images'>;
+    twitterSite: Schema.Attribute.String;
+    twitterTitle: Schema.Attribute.String;
   };
 }
 
@@ -649,16 +949,33 @@ export interface TitleTitle extends Struct.ComponentSchema {
   };
 }
 
+export interface TooltipTooltip extends Struct.ComponentSchema {
+  collectionName: 'components_tooltip_tooltips';
+  info: {
+    displayName: 'Tooltip';
+  };
+  attributes: {
+    media: Schema.Attribute.Media<'images'>;
+    tooltipContent: Schema.Attribute.Blocks;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'accordion.accordion': AccordionAccordion;
+      'accordion.accordion-grid': AccordionAccordionGrid;
+      'blog.blog-detail-page': BlogBlogDetailPage;
+      'blog.blog-section': BlogBlogSection;
       'card.blog-card': CardBlogCard;
       'card.card': CardCard;
       'card.icon-card': CardIconCard;
       'card.media-card': CardMediaCard;
       'carousel.carousel': CarouselCarousel;
+      'carousel.login-carousel': CarouselLoginCarousel;
+      'contact-block.contact-block': ContactBlockContactBlock;
       'cta.cta-button': CtaCtaButton;
+      'download-abcd-app.download-abcd-app': DownloadAbcdAppDownloadAbcdApp;
       'footer.footer-media-section': FooterFooterMediaSection;
       'footer.footer-middle-section': FooterFooterMiddleSection;
       'footer.footer-social-platforms-section': FooterFooterSocialPlatformsSection;
@@ -678,13 +995,25 @@ declare module '@strapi/strapi' {
       'header.right-search-section': HeaderRightSearchSection;
       'header.ticker-section': HeaderTickerSection;
       'input-field.input-field': InputFieldInputField;
+      'input-field.input-link': InputFieldInputLink;
       'list.list': ListList;
       'list.redirection-list': ListRedirectionList;
+      'login-module.form-submission': LoginModuleFormSubmission;
+      'login-module.login-module': LoginModuleLoginModule;
+      'login-module.otp-verification-form': LoginModuleOtpVerificationForm;
+      'login-module.user-input-form': LoginModuleUserInputForm;
       'media.media': MediaMedia;
       'menu.menu': MenuMenu;
       'menu.redirection-menu': MenuRedirectionMenu;
       'menu.site-menu': MenuSiteMenu;
+      'page-configuration.page-properties': PageConfigurationPageProperties;
+      'popular-search.popular-searches': PopularSearchPopularSearches;
       'search.quick-search': SearchQuickSearch;
+      'seo.og-tags': SeoOgTags;
+      'seo.robots-configuration': SeoRobotsConfiguration;
+      'seo.seo-configuration': SeoSeoConfiguration;
+      'seo.tags': SeoTags;
+      'seo.twitter-tags': SeoTwitterTags;
       'social-media.social-media': SocialMediaSocialMedia;
       'sticky-wrapper.credit-score-section': StickyWrapperCreditScoreSection;
       'sticky-wrapper.download-abcd-app-section': StickyWrapperDownloadAbcdAppSection;
@@ -695,6 +1024,7 @@ declare module '@strapi/strapi' {
       'style-heading.style-heading': StyleHeadingStyleHeading;
       'tab.card-tab': TabCardTab;
       'title.title': TitleTitle;
+      'tooltip.tooltip': TooltipTooltip;
     }
   }
 }
