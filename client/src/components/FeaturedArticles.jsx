@@ -20,7 +20,8 @@ export default function FeaturedArticles() {
       id: 1,
       category: "INSURANCE",
       categoryColor: "#FFD65C",
-      title: "Habitasse risus at in proin amet. Elementum pellentesque est orci...",
+      title:
+        "Habitasse risus at in proin amet. Elementum pellentesque est orci...",
       description:
         "Mattis integer consectetur tincidunt tincidunt viverra. Lectus purus vitae ultricies nibh tempor ligula adipiscing...",
       readTime: "05 Min Read",
@@ -31,7 +32,8 @@ export default function FeaturedArticles() {
       id: 2,
       category: "INSURANCE",
       categoryColor: "#BDD753",
-      title: "Habitasse risus at in proin amet. Elementum pellentesque est orci...",
+      title:
+        "Habitasse risus at in proin amet. Elementum pellentesque est orci...",
       description:
         "Mattis integer consectetur tincidunt tincidunt viverra. Lectus purus vitae ultricies nibh tempor ligula adipiscing...",
       readTime: "05 Min Read",
@@ -42,7 +44,8 @@ export default function FeaturedArticles() {
       id: 3,
       category: "INSURANCE",
       categoryColor: "#FAA61A",
-      title: "Habitasse risus at in proin amet. Elementum pellentesque est orci...",
+      title:
+        "Habitasse risus at in proin amet. Elementum pellentesque est orci...",
       description:
         "Mattis integer consectetur tincidunt tincidunt viverra. Lectus purus vitae ultricies nibh tempor ligula adipiscing...",
       readTime: "05 Min Read",
@@ -53,12 +56,12 @@ export default function FeaturedArticles() {
 
   return (
     <section
-      className="w-full mx-auto p-4"
+      className="w-full p-4"
       aria-labelledby="featured-articles-heading"
     >
       <h2
         id="featured-articles-heading"
-        className="text-[42px] ml-[11rem] leading-[40px] tracking-[0px] mb-6 font-extralight"
+        className="text-[42px] leading-[40px] tracking-[0px] mb-6 font-extralight"
       >
         Featured <span className="text-[#C91429]">Articles</span>
       </h2>
@@ -79,27 +82,25 @@ export default function FeaturedArticles() {
           prevEl: ".custom-prev",
         }}
         pagination={{ clickable: true }}
-        centeredSlides
-        slidesPerView={1.3}
-        spaceBetween={40}
+        // centeredSlides
+        slidesPerView={1.2}
+        spaceBetween={80}
         className="relative"
         aria-roledescription="carousel"
       >
         {articles.map((article) => (
           <SwiperSlide key={article.id} className="pb-12.5">
             <article
-              className="flex flex-col md:flex-row rounded-[20px] overflow-hidden shadow-md group cursor-pointer transition-all duration-500 ease-in-out bg-[#f3f3f3] border border-[#d1d1d182]"
-              style={{ width: "1148.91px", height: "393.4px" }}
+              className="flex flex-col md:flex-row rounded-[20px] overflow-hidden shadow-md group cursor-pointer transition-all duration-500 ease-in-out bg-[#f3f3f3] border border-[#d1d1d182] w-full h-auto"
+              // style={{ width: "1148.91px", height: "393.4px" }}
               aria-label={`Article about ${article.category}: ${article.title}`}
             >
               {/* Image */}
-              <div className="w-1/2 relative rounded-[20px] h-full overflow-hidden">
+              <div className="w-1/2 relative rounded-[20px] max-h-[360px] overflow-hidden">
                 <Image
                   src={article.image}
                   alt={`${article.category} - ${article.title}`}
-                  fill
-                  className="object-cover transition-all duration-500 ease-in-out group-hover:scale-105"
-                  priority
+                  className="object-cover transition-all duration-500 ease-in-out group-hover:scale-105 w-full h-full"
                 />
               </div>
 
@@ -153,11 +154,14 @@ export default function FeaturedArticles() {
         ))}
 
         {/* Navigation Controls */}
-        <div className="flex ml-[11rem] items-center relative z-15" aria-label="Carousel controls">
+        <div
+          className="flex items-center relative z-15"
+          aria-label="Carousel controls"
+        >
           <div className="flex gap-3">
             <button
               className={`custom-prev w-10 h-10 border border-[#C91429] rounded-full flex justify-center items-center text-[#C91429]
-              hover:bg-[#C91429] hover:text-white transition
+              hover:bg-[#C91429] hover:text-white transition cursor-pointer
               ${isBeginning ? "opacity-50 pointer-events-none" : ""}`}
               disabled={isBeginning}
               aria-label="Previous slide"
@@ -167,7 +171,7 @@ export default function FeaturedArticles() {
 
             <button
               className={`custom-next w-10 h-10 border border-[#C91429] rounded-full flex justify-center items-center text-[#C91429]
-              hover:bg-[#C91429] hover:text-white transition
+              hover:bg-[#C91429] hover:text-white transition cursor-pointer
               ${isEnd ? "opacity-50 pointer-events-none" : ""}`}
               disabled={isEnd}
               aria-label="Next slide"

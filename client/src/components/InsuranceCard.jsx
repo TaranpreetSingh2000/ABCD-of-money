@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import insuranceData from "../data/insuranceData.json";
 

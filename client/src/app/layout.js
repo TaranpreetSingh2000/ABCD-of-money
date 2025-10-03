@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import TickerBanner from "@/components/Ticker";
 import { Anek_Latin } from "next/font/google";
+import FooterCard from "./FooterCard/page";
 
 const anekLatin = Anek_Latin({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <TickerBanner />
         <Header />
         {children}
+        <FooterCard />
       </body>
     </html>
   );
