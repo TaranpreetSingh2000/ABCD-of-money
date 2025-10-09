@@ -180,9 +180,6 @@ const HeaderSidebarData = ({ navData, activeSidebar }) => {
       (item) => item.title.toLowerCase() === activeSidebar?.toLowerCase()
     ) || navData?.items.find((item) => item.title === "Related Reeds");
 
-  // console.log(navData.items);
-  // console.log(selCategory);
-  // console.log(sel2Category);
 
   return (
     <div className="w-[74.75%] overflow-y-auto flex h-full bg-gray-100">

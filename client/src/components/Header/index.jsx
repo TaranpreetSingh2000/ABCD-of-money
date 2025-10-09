@@ -1996,7 +1996,6 @@ const Header = () => {
               <nav className="hidden md:flex items-center text-[15px]">
                 {dropdownNav.map((navItem, index) => {
                   const navData = navItem.dropdown;
-                  // console.log(navItem, "Header ---------------------------");
 
                   return (
                     <div className="primaryNav" key={index}>

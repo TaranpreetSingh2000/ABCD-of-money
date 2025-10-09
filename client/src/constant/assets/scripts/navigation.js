@@ -23,12 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
     document.body.addEventListener('click', function(e) {
       if (!e.target.closest('.nav_bar_wrapper')) {
-        // console.log(1)
           dropdownGrid.classList.remove('show');
           dropdownGrid2.classList.remove('show');
           corporatesAnchor.parentNode.classList.remove('active');
           corporatesAnchor2.parentNode.classList.remove('active');
-        //   console.log(2)
       }
       });
   });

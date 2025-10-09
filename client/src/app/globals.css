@@ -190,3 +190,7 @@
 .small-bounce {
   animation: small-bounce 1.8s infinite ;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #c91429 !important;
+}

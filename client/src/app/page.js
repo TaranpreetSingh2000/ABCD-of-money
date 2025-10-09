@@ -14,15 +14,15 @@ import RelatedArticles from "../components/RelatedArticles";
 export default function Home() {
   return (
     <div className="max-w-[1440px] mx-auto">
-      <InsurancePage />
+      {/* <InsurancePage /> */}
       <InsuranceCard />
       <HealthBanner />
       <JourneyFlow />
       <Carousel />
       <TipCard />
-      <StickyNav />
-      <RecommendedTopics />
-      <DiscoverConvenience />
+      {/* <StickyNav /> */}
+      {/* <RecommendedTopics /> */}
+      {/* <DiscoverConvenience /> */}
       <Accordion />
       <FeaturedArticles />
       <RelatedArticles />

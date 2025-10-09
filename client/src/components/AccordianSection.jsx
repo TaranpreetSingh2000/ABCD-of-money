@@ -11,7 +11,6 @@ const AccordianSection = () => {
             [index]: !prev[index]
         })
         )
-        console.log(index)
     }
 
     return (

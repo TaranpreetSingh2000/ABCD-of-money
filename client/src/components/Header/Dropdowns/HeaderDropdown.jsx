@@ -34,7 +34,6 @@ const HeaderDropdown = ({
 
   if (!mounted) return null;
 
-  // console.log(navData?.items);
 
   return createPortal(
     <>

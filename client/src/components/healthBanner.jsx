@@ -1,34 +1,36 @@
+"use client";
 import React from "react";
 import bannerData from "../data/healthBanner.json";
 
 const HealthBanner = () => {
-  const banner = bannerData[0]; // ✅ Access first object in the array
+  const banner = bannerData[0];
 
   return (
-    <div className="relative rounded-[30px] overflow-hidden h-36">
+    <div className="relative md:w-[70%] gap-5 rounded-3xl overflow-hidden flex flex-col md:flex-row items-start justify-between md:items-center px-[30px] py-[28px]">
+      {/* Background Image */}
       <img
         src="/images/protect-now-bg1.png"
         alt="Health Banner Background"
-        className="absolute inset-0 h-36 w-full"
+        className="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div className="relative z-10 p-6 sm:p-10 flex flex-col sm:flex-row justify-between items-center h-full">
-        <div className="max-w-xl">
-          <h2 className="text-[26px] leading-[32px] text-[#111111] mb-2 font-[var(--dev_semi_bold) 	font-medium text-black mb-2">
-            {banner.heading}
-          </h2>
-          <p className="text-[16px] leading-[17px] font-[var(--dev_med)] text-black opacity-80 overflow-hidden">
-            {banner.subText}
-          </p>
-        </div>
-
-        <button className="relative mt-4 sm:mt-0 px-6 py-3 border-2 cursor-pointer border-red-700 text-red-700 font-semibold rounded-full overflow-hidden transition-all duration-300 group">
-          <span className="relative z-10 group-hover:text-white transition-colors duration-300">
-            {banner.buttonText}
-          </span>
-          <span className="absolute inset-0 bg-red-700 transform scale-y-0 origin-bottom transition-transform duration-300 group-hover:scale-y-100 rounded-full z-0"></span>
-        </button>
+      {/* Text Content */}
+      <div className="relative z-10 flex flex-col md:max-w-md justify-center gap-2">
+        <h2 className="text-[#111111] font-semibold text-lg md:text-[26px] leading-6">
+          {banner.heading}
+        </h2>
+        <p className="text-[#111111] font-normal mb-4 md:mb-0 text-xs md:text-[16px] opacity-90">
+          {banner.subText}
+        </p>
       </div>
+
+      {/* Button */}
+      <button className="relative z-10 md:py-3 md:px-8 py-3 px-8 rounded-[40px] border border-[#C91429] text-[#C91429] font-normal text-xs md:text-sm flex justify-center items-center overflow-hidden transition-all duration-300 group">
+        <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+          {banner.buttonText}
+        </span>
+        <span className="absolute inset-0 bg-[#C91429] transform scale-y-0 origin-bottom transition-transform duration-300 group-hover:scale-y-100 rounded-[40px] z-0"></span>
+      </button>
     </div>
   );
 };

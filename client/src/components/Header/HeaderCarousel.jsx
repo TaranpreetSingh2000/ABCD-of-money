@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 const TopSlider = ({ sliderData }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
-  // console.log(sliderData);
 
   return (
     <>

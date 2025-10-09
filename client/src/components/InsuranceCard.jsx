@@ -1,62 +1,57 @@
 "use client";
 import React from "react";
-import insuranceData from "../data/insuranceData.json";
+import insuranceData from "../constant/insuranceData.json";
 
 const InsuranceCard = () => {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto w-full max-w-[910px] flex flex-col gap-4 px-4">
       {insuranceData.map((item, index) => (
         <div
           key={index}
-          className="group/up flex items-center gap-[30px] p-4 rounded-2xl border border-white mb-4 transition-all duration-700 ease-in-out hover:bg-[#fff6f7] hover:border-[#c91429]"
+          className="group flex flex-col sm:flex-row items-start sm:items-center md:gap-[30px] bg-[#FFFFFF] border border-[#EFEFEF] rounded-[20px] p-[17px] transition-all duration-700 ease-in-out hover:bg-[#fff6f7] hover:border-[#c91429]"
         >
+          {/* IMAGE */}
           <img
             src="/images/blog-sub-cat-1.jpg"
             alt={item.title}
-            className="w-55 h-31 cursor-pointer object-cover rounded-xl transition-all duration-700 ease-in-out"
+            className="w-full sm:w-[262.8px] h-[180px] sm:h-[148.9px] object-cover rounded-[12px] cursor-pointer transition-all duration-700 ease-in-out"
           />
 
-          {/* Text Content */}
-          <div className="flex flex-col  justify-between transition-all duration-700 ease-in-out w-full">
-            <div className="transition-all duration-700 translate-y-3.5 group-hover/up:translate-y-0">
+          {/* TEXT SECTION */}
+          <div className="flex flex-col justify-between w-full mt-4 sm:mt-0 transition-all duration-700 ease-in-out">
+            <div className="transition-all duration-700 translate-y-3.5 group-hover:translate-y-0">
+              {/* CATEGORY TAG */}
               <span
-                className="font-bold cursor-pointer text-[12px] leading-4 uppercase bg-[#ffd65c] px-3 py-[5px] rounded-[20px] text-[#111111] block w-fit mb-0 border border-transparent transition-all duration-700 ease-in-out"
-                style={{ backgroundColor: "#facc15", borderColor: "#facc15" }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = "#ffd65c47";
-                  e.currentTarget.style.borderColor = "#ffd5c";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = "#facc15";
-                  e.currentTarget.style.borderColor = "#facc15";
-                }}
+                className="inline-block font-anek font-normal text-[12px] leading-[16px] uppercase text-[#111111] mb-2 px-[13px] py-[6px] bg-[#FFD65C] border border-[#FFD65C] rounded-[20px] cursor-pointer transition-all duration-700 ease-in-out hover:bg-[#FFD65C]/30 hover:border-[#FFD65C]"
               >
                 {item.category}
               </span>
 
-              <h2 className="text-[24px] cursor-pointer leading-[32px] mb-1 transition-all duration-700 ease-in-out group-hover/up:text-[#c91429]">
+              {/* TITLE */}
+              <h2 className="font-anek font-medium text-2xl leading-8 text-[#111111] mb-2 cursor-pointer transition-all duration-700 ease-in-out group-hover:text-[#c91429]">
                 {item.title}
               </h2>
 
-              <div className="text-base capitalize text-[rgba(0,0,0,0.8)] flex gap-2 items-center mb-2 transition-all duration-700 ease-in-out">
+              {/* META INFO */}
+              <div className="flex items-center gap-2 text-sm leading-5 font-anek font-normal text-[#111111CC] capitalize transition-all duration-700 ease-in-out">
                 <span>{item.readTime}</span>
-                <span className="text-gray-400 text-xl">•</span>
+                <span className="w-1 h-1 rounded-full bg-[#0000004D] inline-block"></span>
                 <span>{item.date}</span>
               </div>
             </div>
+
             {/* READ MORE */}
             <a
               href={item.link}
-              className="flex opacity-0 group/right cursor-pointer group-hover/up:opacity-100 transition-all duration-700 ease-in-out items-center text-sm font-bold text-[#c91429]"
+              className="flex items-center text-sm font-bold text-[#c91429] opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out mt-2"
             >
-              READ MORE{" "}
-              <span className=" ml-1 cursor-pointer transition-all duration-700 group-hover/right:ml-2">
+              READ MORE
+              <span className="ml-1 transition-all duration-700 group-hover:ml-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
                   height="14"
                   fill="currentColor"
-                  className="bi bi-chevron-right"
                   viewBox="0 0 16 16"
                 >
                   <path

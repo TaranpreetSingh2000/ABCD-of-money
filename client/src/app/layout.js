@@ -16,10 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${anekLatin.className} antialiased`}>
-        <TickerBanner />
-        <Header />
+        {/* <TickerBanner /> */}
+        {/* <Header /> */}
         {children}
-        <FooterCard />
+        {/* <FooterCard /> */}
       </body>
     </html>
   );

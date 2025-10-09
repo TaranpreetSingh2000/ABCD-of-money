@@ -17,8 +17,6 @@ const HeaderTopNav = ({
   const [mounted, setMounted] = useState(false);
   const [activeNonDropdown, setActiveNonDropdown] = useState("PERSONAL");
 
-  // console.log(secondaryNavigation);
-
   useEffect(() => {
     setMounted(true);
     return () => setMounted(false);
@@ -61,7 +59,6 @@ const HeaderTopNav = ({
       <div className="mx-auto flex justify-end items-center max-w-[1440px]">
         <div className="flex gap-1 text-xs font-normal pr-4 py-2.5 items-center">
           {leftNav.map((item, index) => {
-            // console.log(item.text);
             return (
               <div key={index} className="relative">
                 {item.dropdown ? (

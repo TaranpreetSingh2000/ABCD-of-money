@@ -51,15 +51,15 @@ export default function RelatedArticles() {
           nextEl: ".custom-next",
           prevEl: ".custom-prev",
         }}
+        slidesPerView={3.2}
         pagination={{ clickable: true, el: ".custom-pagination" }}
-        spaceBetween={30}
-        slidesPerView={3}
+        spaceBetween={10}
         className="pb-20 relative"
         breakpoints={{
           320: { slidesPerView: 1, spaceBetween: 15 },
           640: { slidesPerView: 2, spaceBetween: 20 },
           1024: { slidesPerView: 3, spaceBetween: 30 },
-        }}
+        }} 
         aria-roledescription="carousel"
       >
         {articles.map((item, index) => (
