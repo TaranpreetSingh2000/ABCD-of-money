@@ -516,6 +516,19 @@ export interface HeaderTickerSection extends Struct.ComponentSchema {
   };
 }
 
+export interface HealthBannerHealthBanner extends Struct.ComponentSchema {
+  collectionName: 'components_health_banner_health_banners';
+  info: {
+    displayName: 'Health Banner';
+  };
+  attributes: {
+    buttonText: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    subText: Schema.Attribute.String;
+  };
+}
+
 export interface InputFieldInputField extends Struct.ComponentSchema {
   collectionName: 'components_input_field_input_fields';
   info: {
@@ -541,6 +554,21 @@ export interface InputFieldInputLink extends Struct.ComponentSchema {
     openInNewTab: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     termsConditionLabel: Schema.Attribute.String & Schema.Attribute.Required;
     termsConditionLink: Schema.Attribute.String;
+  };
+}
+
+export interface InsuranceCardInsuranceCard extends Struct.ComponentSchema {
+  collectionName: 'components_insurance_card_insurance_cards';
+  info: {
+    displayName: 'Insurance Card';
+  };
+  attributes: {
+    category: Schema.Attribute.String;
+    date: Schema.Attribute.String;
+    link: Schema.Attribute.String;
+    media: Schema.Attribute.Media<'images'>;
+    readTime: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -994,8 +1022,10 @@ declare module '@strapi/strapi' {
       'header.right-inner-block-section': HeaderRightInnerBlockSection;
       'header.right-search-section': HeaderRightSearchSection;
       'header.ticker-section': HeaderTickerSection;
+      'health-banner.health-banner': HealthBannerHealthBanner;
       'input-field.input-field': InputFieldInputField;
       'input-field.input-link': InputFieldInputLink;
+      'insurance-card.insurance-card': InsuranceCardInsuranceCard;
       'list.list': ListList;
       'list.redirection-list': ListRedirectionList;
       'login-module.form-submission': LoginModuleFormSubmission;

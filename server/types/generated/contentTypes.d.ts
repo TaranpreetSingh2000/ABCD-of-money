@@ -551,6 +551,35 @@ export interface ApiHeaderHeader extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiHealthBannerHealthBanner
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'health_banners';
+  info: {
+    displayName: 'Health Banner';
+    pluralName: 'health-banners';
+    singularName: 'health-banner';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<'health-banner.health-banner', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::health-banner.health-banner'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
   collectionName: 'homepages';
   info: {
@@ -579,6 +608,38 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
       'popular-search.popular-searches',
       false
     >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiInsuranceCardInsuranceCard
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'insurance_cards';
+  info: {
+    displayName: 'Insurance Card';
+    pluralName: 'insurance-cards';
+    singularName: 'insurance-card';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    InsuranceSection: Schema.Attribute.Component<
+      'insurance-card.insurance-card',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::insurance-card.insurance-card'
+    > &
+      Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1265,7 +1326,9 @@ declare module '@strapi/strapi' {
       'api::footer-note.footer-note': ApiFooterNoteFooterNote;
       'api::footer.footer': ApiFooterFooter;
       'api::header.header': ApiHeaderHeader;
+      'api::health-banner.health-banner': ApiHealthBannerHealthBanner;
       'api::homepage.homepage': ApiHomepageHomepage;
+      'api::insurance-card.insurance-card': ApiInsuranceCardInsuranceCard;
       'api::login-module.login-module': ApiLoginModuleLoginModule;
       'api::middle-navigation-section.middle-navigation-section': ApiMiddleNavigationSectionMiddleNavigationSection;
       'api::sticky-side-wrapper.sticky-side-wrapper': ApiStickySideWrapperStickySideWrapper;

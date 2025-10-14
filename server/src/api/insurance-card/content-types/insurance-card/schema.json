@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "insurance_cards",
+  "info": {
+    "singularName": "insurance-card",
+    "pluralName": "insurance-cards",
+    "displayName": "Insurance Card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "InsuranceSection": {
+      "type": "component",
+      "component": "insurance-card.insurance-card",
+      "repeatable": false
+    }
+  }
+}

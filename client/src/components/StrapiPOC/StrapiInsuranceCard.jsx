@@ -1,18 +1,15 @@
-import { fetchCardData } from "@/services/insuranceCard.service";
-import { data } from "autoprefixer";
-
-const InsuranceCard = async() => {
- const insuranceData = await fetchCardData();
+import React from "react";
+const StrapiInsuranceCard = () => {
   return (
     <div className="mx-auto w-full max-w-[910px] flex flex-col gap-4 px-4">
-      {insuranceData.data.map((item, index) => (
+      {insuranceData.map((item, index) => (
         <div
           key={index}
           className="group flex flex-col sm:flex-row items-start sm:items-center md:gap-[30px] bg-[#FFFFFF] border border-[#EFEFEF] rounded-[20px] p-[17px] transition-all duration-700 ease-in-out hover:bg-[#fff6f7] hover:border-[#c91429]"
         >
           {/* IMAGE */}
           <img
-            src={`${process.env.NEXT_STRAPI_URL}${item.InsuranceSection.media.url}`}
+            src="/images/blog-sub-cat-1.jpg"
             alt={item.title}
             className="w-full sm:w-[262.8px] h-[180px] sm:h-[148.9px] object-cover rounded-[12px] cursor-pointer transition-all duration-700 ease-in-out"
           />
@@ -24,25 +21,25 @@ const InsuranceCard = async() => {
               <span
                 className="inline-block font-anek font-normal text-[12px] leading-[16px] uppercase text-[#111111] mb-2 px-[13px] py-[6px] bg-[#FFD65C] border border-[#FFD65C] rounded-[20px] cursor-pointer transition-all duration-700 ease-in-out hover:bg-[#FFD65C]/30 hover:border-[#FFD65C]"
               >
-                {item.InsuranceSection.category}
+                {item.category}
               </span>
 
               {/* TITLE */}
               <h2 className="font-anek font-medium text-2xl leading-8 text-[#111111] mb-2 cursor-pointer transition-all duration-700 ease-in-out group-hover:text-[#c91429]">
-                {item.InsuranceSection.title}
+                {item.title}
               </h2>
 
               {/* META INFO */}
               <div className="flex items-center gap-2 text-sm leading-5 font-anek font-normal text-[#111111CC] capitalize transition-all duration-700 ease-in-out">
-                <span>{item.InsuranceSection.readTime}</span>
+                <span>{item.readTime}</span>
                 <span className="w-1 h-1 rounded-full bg-[#0000004D] inline-block"></span>
-                <span>{item.InsuranceSection.date}</span>
+                <span>{item.date}</span>
               </div>
             </div>
 
             {/* READ MORE */}
             <a
-              href={item.InsuranceSection.link}
+              href={item.link}
               className="flex items-center text-sm font-bold text-[#c91429] opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out mt-2"
             >
               READ MORE
@@ -67,5 +64,4 @@ const InsuranceCard = async() => {
     </div>
   );
 };
-
-export default InsuranceCard;
+export default StrapiInsuranceCard;

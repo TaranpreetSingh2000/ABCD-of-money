@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_insurance_card_insurance_cards",
+  "info": {
+    "displayName": "Insurance Card"
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "readTime": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

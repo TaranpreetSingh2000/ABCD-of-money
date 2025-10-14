@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "health_banners",
+  "info": {
+    "singularName": "health-banner",
+    "pluralName": "health-banners",
+    "displayName": "Health Banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "health-banner.health-banner",
+      "repeatable": false
+    }
+  }
+}
